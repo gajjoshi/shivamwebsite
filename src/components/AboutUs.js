@@ -103,37 +103,12 @@ const AboutUs = () => {
 
   }, []);
 
-  //   return (
-  //     <div className='about'>
-  //       {data.length > 0 ? (
-  //         <Carousel>
-  //           {data.map(item => (
-  //             <Carousel.Item key={item.id} interval={2000} style={{ padding: '60px' }}>
-  //               <div className='top'>
-  //                 <div className='left'>
-  //                   <img className='left-img1' src={item.image} alt="movie" />
-  //                 </div>
-  //                 <div className='right1' style={{ paddingLeft: '50px' }}>
-  //                   <h1>{item.name}</h1>
-  //                   <p className='short-detail'>Lorem ipsum dolor sit amet consectetur adipisicing elit.Temporibus praesentium libero velit voluptas laborum excepturi officiis, architecto, maiores perspiciatis aperiam est a? Accusantium sint id, nam dolorem <br /> maxime cupiditate beatae!</p>
-  //                 </div>
-  //               </div>
-  //             </Carousel.Item>
-  //           ))}
-  //         </Carousel>
-  //       ) : (
-  //         <p>Loading...</p>
-  //       )}
-  //     </div>
-  //   );
-  // };
-
   return (
     <div className='about'>
       <div className='left-heading'>
 
 
-        <Grid item md={3} sx={{ paddingTop: 3 }}>
+        <Grid item md={3} xs={12} sm={12} sx={{ paddingTop: 3 }}>
           <div style={{ paddinTop: 80, fontSize: 60, paddingLeft: 110, color: "#b62e2f" }}>
             OUR
           </div>
