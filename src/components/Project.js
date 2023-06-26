@@ -45,8 +45,9 @@ export default function Project() {
                     <Typography variant='h4' sx={{fontFamily:"Rosarivo",fontSize:36,color:"black"}}>CURRENT</Typography>
                     <img style={{width:"200px",height:"300px"}} src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png"></img>
                     <br/>
+                    <Link to='/movie'>
                     <Button variant="contained" onClick={curr} sx={{backgroundColor:"#D9D9D9",color:"black",borderRadius:20,marginTop:3,marginLeft:6,"&:hover": {backgroundColor:"#f0f0f0",color:"black",borderRadius:20}}}>More{'>'}</Button>
-                    
+                    </Link>
                 </Grid>
                 </motion.div>
                 <motion.div whileHover={{scale:1.4}} style={{backgroundColor:"grey"}}>
@@ -54,8 +55,9 @@ export default function Project() {
                     <Typography variant='h4' sx={{fontFamily:"Rosarivo",fontSize:36}}>UPCOMING</Typography>
                     <img style={{width:"200px",height:"300px"}} src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png"></img>
                     <br/>
+                    <Link to='/movie'>
                     <Button variant="contained" onClick={upc} sx={{backgroundColor:"#f0f0f0",color:"black",borderRadius:20,marginTop:3,marginLeft:6,"&:hover": {backgroundColor:"#f0f0f0",color:"black",borderRadius:20}}}>More{'>'}</Button>
-                    
+                    </Link>
                 </Grid>
                 </motion.div>
                    

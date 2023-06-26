@@ -9,13 +9,13 @@ import Mov from './Mov';
 export default function Movies() {
     const [value, setValue] = React.useState('1');
     // if(localStorage.getItem("select")==1){
-    //     setValue("one")
+    //     setValue("1")
     // }
     // else if(localStorage.getItem("select")==2){
-    //     setValue("two")
+    //     setValue("2")
     // }
     // else if(localStorage.getItem("select")==3){
-    //     setValue("three")
+    //     setValue("3")
     // }
     console.log(value);
   const handleChange = (event, newValue) => {
