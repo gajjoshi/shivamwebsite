@@ -23,15 +23,15 @@ export default function Movies() {
   };
   return (
     <>
-     <Box sx={{ width: '100%', typography: 'body1', }}>
+     <Box sx={{ width: '100%', typography: 'body1',paddingTop:'40px' }}>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab label="Previous" value="1" />
+          <TabList onChange={handleChange} centered aria-label="lab API tabs example" indicatorColor="secondary" textColor="secondary">
+            <Tab label="Previous" value="1"   />
             <Tab label="Current" value="2" />
             <Tab label="Upcoming" value="3" />
           </TabList>
-        </Box>
+        </Box>  
         <TabPanel value="1">
         <Mov value={value}></Mov>
         </TabPanel>
