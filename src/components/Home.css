@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    /* align-items: center; */
+    padding :100px;
+    padding-left: 300px;
+    background-color: #2b2c2c;
+    
+   
+}
+.left-img{
+    height: 550px;
+    width: 400px;
+    /* padding-right: 100px; */
+
+}
+.right{
+display:flex  ;
+flex-direction: column;
+padding-left: 100px;
+justify-content: start;
+/* justify-content: baseline; */
+}
+.right-lower{
+    padding-top: 50px;
+    color : #9a9f75;
+    padding-left: 50px;
+    font-stretch: expanded;
+    
+}
+.right-img{
+    padding-top: 30px;
+}
