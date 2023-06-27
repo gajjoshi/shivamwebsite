@@ -67,13 +67,13 @@ export default function Contact() {
   }
   return (
     <>
-    <div style={{backgroundColor:"2b2c2c"}}>
+    <div style={{backgroundColor:"#2b2c2c"}}>
       <FormControl>
       <Grid container rowSpacing={3} sx={{backgroundColor:"2b2c2c"}}>
-        <Grid item md={6} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
+        <Grid item md={6} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
           <Grid container>
-            <Grid item md={3}></Grid>
-            <Grid item md={8}>
+            <Grid item md={3} sm={1} xs={1}></Grid>
+            <Grid item md={8} sm={10} xs={10}>
               <Typography variant='h5' sx={{ fontStyle: "bold", fontSize: "40px", fontWeight: "1000",color:"#9a9f75", fontWeight :"bold"}}>
                 Let’s discuss
               </Typography>
@@ -84,9 +84,9 @@ export default function Contact() {
                 together
               </Typography>
             </Grid>
-            <Grid item md={1}></Grid>
-            <Grid item md={3}></Grid>
-            <Grid item md={8} sx={{ padding: "40px", paddingLeft: "0px" }}>
+            <Grid item md={1} sm={1} xs={1}></Grid>
+            <Grid item md={3} sm={1} xs={1}></Grid>
+            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px" }}>
               <IconButton>
                 <EmailIcon sx={{ color: "red" }}></EmailIcon>
               </IconButton>
@@ -118,29 +118,29 @@ export default function Contact() {
               </div>
 
             </Grid>
-            <Grid item md={1}></Grid>
+            <Grid item md={1} sm={1} xs={1}></Grid>
           </Grid>
         </Grid>
         <Grid item md={6} sx={{ paddingTop: "20px" }}>
           <Grid container>
             <Grid item md={8} sx={{ backgroundColor: "grey", height: "570px", padding: "20px", paddingTop: "40px" , borderRadius:"10px"}}>
               <Grid container>
-                <Grid item md={12} sx={{color:"#9a9f75",fontSize:"40px", fontStyle :"bold", fontWeight :"bold", paddingTop: "20px" }}>
+                <Grid item md={12} sm={12} xs={12} sx={{color:"#9a9f75",fontSize:"40px", fontStyle :"bold", fontWeight :"bold", paddingTop: "20px" }}>
                   I'm interested...
                 </Grid>
-                <Grid item md={12} sx={{ paddingTop: "40px" }}>
+                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
                   <TextField error value={name} onChange={(e)=>{setName(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Your name" sx={{ width: "100%" }} />
                 </Grid>
-                <Grid item md={12} sx={{ paddingTop: "40px" }}>
+                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
                   <TextField error value={email} onChange={(e)=>{setEmail(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Email" sx={{ width: "100%" }} />
                 </Grid>
-                <Grid item md={12} sx={{ paddingTop: "40px" }}>
+                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
                   <TextField error value={phone} inputProps={{pattern:'[0-9]'}} onChange={(event)=>{const inputValue = event.target.value;const numericValue = inputValue.replace(/[^0-9]/g, '');setPhone(numericValue)}} id="standard-basic" variant="standard" placeholder="Number" sx={{ width: "100%" }} />
                 </Grid>
-                <Grid item md={12} sx={{ paddingTop: "40px" }}>
+                <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
                   <TextField error value={message} onChange={(e)=>{setMessage(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Message" sx={{ width: "100%" }} />
                 </Grid>
-                <Grid item md={12} sx={{ paddingTop: "40px" }}>
+                <Grid item md={12}  sm={12} xs={12} sx={{ paddingTop: "40px" ,justifyContent:"center",display:"flex",alignItems:"center"}}>
                   
                   <Button onClick={check} sx={{ backgroundColor: "#C61414", color: "white",fontWeight :"bold ", borderRadius: 20, padding: "5px", width: "30%", "&:hover": { backgroundColor: "#C61414", color: "white", borderRadius: 20, padding: "5px", width: "30%" } }}>
                     Send

@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import './AboutUs.css';
 import axios from 'axios';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -104,23 +103,17 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div className='about'>
-      <div className='left-heading'>
-
-
-        <Grid item md={3} xs={12} sm={12} sx={{ paddingTop: 3 }}>
-          <div style={{ paddinTop: 80, fontSize: 60, paddingLeft: 110, color: "#b62e2f" }}>
+    <>
+        <Grid container sx={{backgroundColor:"#2b2c2c"}}>        
+        <Grid item md={3} xs={12} sm={12} sx={{ paddingTop: 0,display:"grid",placeItems:"center" }}>
+          <div style={{ paddinTop: 80, fontSize: 60, paddingLeft: { md:110,lg:110,sm:50,xs:50}, color: "#b62e2f" }}>
             OUR
           </div>
           <div style={{ paddinTop: 10, fontSize: 60, paddingLeft: 80, color: "#b62e2f" }}>
             PEOPLE
           </div>
         </Grid>
-      </div>
-
-      <div className='carousel-part'>
-
-
+        <Grid item md={9} xs={12} sm={12} sx={{ paddingTop: 0 }}>
         <Carousel >
           <Carousel.Item interval={500000} style={{ padding: '60px' }}>
             <Grid container >
@@ -216,8 +209,8 @@ const AboutUs = () => {
             </Grid>
           </Carousel.Item>
         </Carousel>
-
-
+        </Grid>
+        </Grid>
         <Modal
           open={open}
           onClose={handleClose}
@@ -274,8 +267,7 @@ const AboutUs = () => {
 
           </Box>
         </Modal>
-      </div>
-    </div>
+    </>
   );
 };
 

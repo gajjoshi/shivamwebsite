@@ -16,16 +16,16 @@ export default function Project() {
   return (
     <>
     <Grid container sx={{backgroundColor:"#2b2c2c"}}>
-        <Grid item md={4} sx={{backgroundColor:"",height:700,display:"grid",placeItems:"center"}}>
+        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"grid",placeItems:"center",height:{md:700,lg:700,sm:400,xs:400}}}>
             <Typography variant="h3" sx={{fontFamily:"Rosarivo",fontSize:"96px",color:"#b62e2f"}}>
                 OUR
                 <br></br>
                 WORK
             </Typography>
         </Grid>
-        <Grid item md={8} sx={{height:700}}>
-            <Grid container columnSpacing={0}>
-            <Grid item md={12} sx={{ height: 100 }}></Grid>
+        <Grid item md={8} xs={12} sm={12} sx={{height:{md:700,lg:700,sm:1380,xs:1380}}}>
+            <Grid container columnSpacing={0} sx={{justifyContent:{sm:"center",xs:"center"}}}>
+            <Grid item md={12} sm={0} xs={0} sx={{ height:{md:100,xs:30,sm:30} }}></Grid>
             <motion.div whileHover={{ scale: 1.4 }} style={{ backgroundColor: "grey" }}>
             <Grid item md={3} sx={{ padding: 3, height: "450px", }}>
             <Typography variant='h4' sx={{ fontFamily: "Rosarivo", fontSize: 36, color: "black" }}>PREVIOUS</Typography>

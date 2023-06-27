@@ -12,7 +12,7 @@ export default function Land() {
     const timeout = setTimeout(() => {
       setShowComponentA(false);
       setShowComponentB(true);
-    }, 5000);
+    }, 1000);
 
     // Clean up the timeout when the component unmounts or the state changes
     return () => clearTimeout(timeout);
