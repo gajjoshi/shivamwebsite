@@ -73,7 +73,7 @@ export default function Contact() {
         <Grid item md={6} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
           <Grid container>
             <Grid item md={3} sm={1} xs={1}></Grid>
-            <Grid item md={8} sm={10} xs={10}>
+            <Grid item md={8} sm={10} xs={10} >
               <Typography variant='h5' sx={{ fontStyle: "bold", fontSize: "40px", fontWeight: "1000",color:"#9a9f75", fontWeight :"bold"}}>
                 Let’s discuss
               </Typography>
