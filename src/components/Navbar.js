@@ -20,15 +20,15 @@ export default function Navbar() {
     const scrollY = window.scrollY || window.pageYOffset;
     // console.log('Scroll X:', scrollX);
     // console.log('Scroll Y:', scrollY);
-    if(scrollY>=0 && scrollY<=400)
+    if(scrollY>=0 && scrollY<=320)
     { 
       setSelect(1)
     }
-    if(scrollY>=400 && scrollY<=800)
+    if(scrollY>=400 && scrollY<=900)
     { 
       setSelect(5)
     }
-    if(scrollY>=800 && scrollY<=1200)
+    if(scrollY>=900 && scrollY<=1200)
     {
       setSelect(3)
     }
@@ -36,7 +36,7 @@ export default function Navbar() {
     {
       setSelect(2)
     }
-    if(scrollY>=1800 )
+    if(scrollY>=2000 )
     {
       setSelect(4)
     }
