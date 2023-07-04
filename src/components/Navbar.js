@@ -16,6 +16,30 @@ import logo from '../images/logo.png';
 export default function Navbar() {
   const handleScroll = () => {
     // Scroll logic here
+    const scrollX = window.scrollX || window.pageXOffset;
+    const scrollY = window.scrollY || window.pageYOffset;
+    // console.log('Scroll X:', scrollX);
+    // console.log('Scroll Y:', scrollY);
+    if(scrollY>=0 && scrollY<=400)
+    { 
+      setSelect(1)
+    }
+    if(scrollY>=400 && scrollY<=800)
+    { 
+      setSelect(5)
+    }
+    if(scrollY>=800 && scrollY<=1200)
+    {
+      setSelect(3)
+    }
+    if(scrollY>=1200 && scrollY<=1600)
+    {
+      setSelect(2)
+    }
+    if(scrollY>=1800 )
+    {
+      setSelect(4)
+    }
   };
 
   useEffect(() => {
