@@ -4,7 +4,6 @@ import Home from './Home';
 import AboutUs from './AboutUs';
 import Project from './Project';
 import Contact from './Contact';
-import Movies from './Movies';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Us from './Us';
 import { useEffect } from 'react';
@@ -15,7 +14,6 @@ import logo from '../images/logo.png';
 import './Navbar.css';
 export default function Navbar() {
   const handleScroll = () => {
-    // Scroll logic here
     const scrollX = window.scrollX || window.pageXOffset;
     const scrollY = window.scrollY || window.pageYOffset;
     if(scrollY>=0 && scrollY<=320)
@@ -62,6 +60,7 @@ export default function Navbar() {
   const s3 = select === 3 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
   const s4 = select === 4 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
   const s5 = select === 5 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
+
   const st={paddingLeft:20,paddingRight:20}
   return (
     <div className='fullbackground'>

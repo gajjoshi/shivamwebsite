@@ -4,13 +4,7 @@ import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import axios from 'axios';
 
 const ExpandMore = styled((props) => {
@@ -50,7 +44,6 @@ const [data, setData] = React.useState([]);
         method: 'get',
         maxBodyLength: Infinity,
         url: url,
-        headers: { }
       };
       
       async function makeRequest() {
@@ -68,21 +61,22 @@ const [data, setData] = React.useState([]);
   }, []);
 
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} sx={{justifyContent:"center",alignItems:"center",display:"flex"}}>
         {data?<>
         {console.log(data)}
             {data.map((item) => {
                 return(
             <Grid item md={4} sm={12} xs={12}>
                 {console.log("item:",item)}
-        <Card sx={{ maxWidth: 300,height:"400px",textAlign:"center" }}>
+        <Card sx={{ maxWidth: 300,maxHeight:1000,textAlign:"center" }}>
       <CardHeader
         
         title={item.name}
       >hii</CardHeader>
       <CardMedia
         component="img"
-        height="400"
+        // height="400"
+        width="100%"
         image={item.image}
         alt="Paella dish"
       />
