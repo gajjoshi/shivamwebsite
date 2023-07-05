@@ -73,16 +73,16 @@ const [data, setData] = React.useState([]);
         {console.log(data)}
             {data.map((item) => {
                 return(
-            <Grid item md={4}>
+            <Grid item md={4} sm={12} xs={12}>
                 {console.log("item:",item)}
-        <Card sx={{ maxWidth: 300 }}>
+        <Card sx={{ maxWidth: 300,height:"400px",textAlign:"center" }}>
       <CardHeader
         
         title={item.name}
-      />
+      >hii</CardHeader>
       <CardMedia
         component="img"
-        height="194"
+        height="400"
         image={item.image}
         alt="Paella dish"
       />

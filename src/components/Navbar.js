@@ -12,14 +12,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import logo from '../images/logo.png';
-
+import './Navbar.css';
 export default function Navbar() {
   const handleScroll = () => {
     // Scroll logic here
     const scrollX = window.scrollX || window.pageXOffset;
     const scrollY = window.scrollY || window.pageYOffset;
-    // console.log('Scroll X:', scrollX);
-    // console.log('Scroll Y:', scrollY);
     if(scrollY>=0 && scrollY<=320)
     { 
       setSelect(1)
@@ -66,7 +64,7 @@ export default function Navbar() {
   const s5 = select === 5 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
 
   return (
-    <div>
+    <div className='fullbackground'>
       <div style={{ position: 'sticky', top: 0, zIndex: 100 }}>
         <div style={{ backgroundColor: '#2b2c2c', padding: 3, paddingLeft: 10 }}>
           <img src={logo} style={{ width: '4%' }} />
@@ -77,7 +75,7 @@ export default function Navbar() {
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div>
+            <div style={{paddingLeft:580}}>
               <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
               <div className="navbar-nav mb-4 mb-lg-0">
                 <Link to="home" smooth={true} duration={300}>
@@ -133,7 +131,6 @@ export default function Navbar() {
             
           </div>
         </nav>
-        {/* jcksjck */}
         </div>
         
       </div>

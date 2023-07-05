@@ -15,7 +15,7 @@ export default function Project() {
     }
   return (
     <>
-    <Grid container sx={{backgroundColor:"#2b2c2c"}}>
+    <Grid container sx={{backgroundColor:""}}>
         <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'90px',md:"310px"},paddingTop: { xs: 0, md: '250px',lg:"250px" }}}>
         <div style={{ paddinTop: 0, fontSize: 60, paddingLeft: 30, color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
             OUR

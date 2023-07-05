@@ -104,13 +104,13 @@ const AboutUs = () => {
 
   return (
     <>
-        <Grid container sx={{backgroundColor:"#2b2c2c"}}>        
+        <Grid container sx={{backgroundColor:""}}>        
         <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'90px',md:"310px"},paddingTop: { xs: 0, md: '80px',lg:"80px" }}}>
         <div style={{ paddinTop: 0, fontSize: 60, paddingLeft: 30, color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
             OUR
           </div>
           <div style={{ paddinTop: 0, fontSize: 60, paddingLeft: {md:80,lg:80,sm:30,xs:30}, color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
-            WORK
+            PEOPLE
           </div>
         </Grid>
         <Grid item md={8} xs={12} sm={12} sx={{ paddingTop: 0 }}>

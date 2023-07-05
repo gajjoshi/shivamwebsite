@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div >
 
-            <div className='main' stlye={{ backgroundColor: "#2b2c2c" , paddingLeft:'350px'}}>
+            <div className='main' stlye={{ backgroundColor: "" , paddingLeft:'350px'}}>
                 <div className='left'>
                     <img className='left-img' src={image} alt="movie" />
                 </div>
