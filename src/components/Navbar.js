@@ -62,7 +62,7 @@ export default function Navbar() {
   const s3 = select === 3 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
   const s4 = select === 4 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
   const s5 = select === 5 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
-
+  const st={paddingLeft:20,paddingRight:20}
   return (
     <div className='fullbackground'>
       <div style={{ position: 'sticky', top: 0, zIndex: 100 }}>
@@ -75,42 +75,52 @@ export default function Navbar() {
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div style={{paddingLeft:580}}>
+            <div style={{paddingLeft:480}}>
               <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
               <div className="navbar-nav mb-4 mb-lg-0">
                 <Link to="home" smooth={true} duration={300}>
+                  <div style={st}>
                   <div style={styles1} onClick={() => setSelect(1)}>
                     <a className="nav-link active" aria-current="page" href="#">
                       <div style={s1}>Home</div>
                     </a>
                   </div>
+                  </div>
                 </Link>
                 <Link to="us" smooth={true} duration={300}>
+                <div style={st}>
                   <div style={styles5} onClick={() => setSelect(5)}>
                     <a className="nav-link active" aria-current="page" href="#">
                       <div style={s5}>Our Story</div>
                     </a>
                   </div>
+                </div>
                 </Link>
                 <Link to="project" smooth={true} duration={300}>
+                  <div style={st}>
                   <div style={styles3} onClick={() => setSelect(3)}>
                     <a className="nav-link active" href="#">
                       <div style={s3}>Projects</div>
                     </a>
                   </div>
+                  </div>
                 </Link>
                 <Link to="about" smooth={true} duration={300}>
+                  <div style={st}>
                   <div style={styles2} onClick={() => setSelect(2)}>
                     <a className="nav-link active" href="#">
                       <div style={s2}>About us</div>
                     </a>
                   </div>
+                  </div>
                 </Link>
                 <Link to="contact" smooth={false} duration={500}>
+                  <div style={st}>
                   <div style={styles4} onClick={() => setSelect(4)}>
                     <a className="nav-link active" href="#">
                       <div style={s4}>Contact us</div>
                     </a>
+                  </div>
                   </div>
                 </Link>
               </div>
