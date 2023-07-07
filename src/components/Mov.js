@@ -61,11 +61,13 @@ const [data, setData] = React.useState([]);
   }, []);
 
   return (
-    <Grid container spacing={2} sx={{justifyContent:"center",alignItems:"center",display:"flex", paddingLeft:"5%"}}>
+    <Grid container spacing={5} sx={{justifyContent:"center",alignItems:"center",display:"flex", paddingLeft:"5%"}}>
         {data?<>
         {console.log(data)}
-            {data.map((item) => {
+            {data.map((item,i) => {
+              console.log(i);
                 return(
+                  <>
             <Grid item md={3} sm={12} xs={12}>
                 {console.log("item:",item)}
         <Card sx={{ maxWidth: 300,maxHeight:1000,textAlign:"center" }}>
@@ -82,6 +84,11 @@ const [data, setData] = React.useState([]);
       />
     </Card>
         </Grid>
+
+
+        {((i+1)%4==0)?<><hr></hr></>:<></>}
+        </>
+        
                 )
         })}
         

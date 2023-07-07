@@ -130,16 +130,16 @@ export default function Contact() {
                   I'm interested...
                 </Grid>
                 <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
-                  <TextField error value={name} onChange={(e)=>{setName(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Your name" sx={{ width: "100%" }} />
+                  <TextField error value={name} onChange={(e)=>{setName(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Your name" sx={{ width: "100%", input: { color: 'white' } }} />
                 </Grid>
                 <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
-                  <TextField error value={email} onChange={(e)=>{setEmail(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Email" sx={{ width: "100%" }} />
+                  <TextField error value={email} onChange={(e)=>{setEmail(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Email" sx={{ width: "100%" , input: { color: 'white' }}} />
                 </Grid>
                 <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
-                  <TextField error value={phone} inputProps={{pattern:'[0-9]'}} onChange={(event)=>{const inputValue = event.target.value;const numericValue = inputValue.replace(/[^0-9]/g, '');setPhone(numericValue)}} id="standard-basic" variant="standard" placeholder="Number" sx={{ width: "100%" }} />
+                  <TextField error value={phone} inputProps={{pattern:'[0-9]'}} onChange={(event)=>{const inputValue = event.target.value;const numericValue = inputValue.replace(/[^0-9]/g, '');setPhone(numericValue)}} id="standard-basic" variant="standard" placeholder="Number" sx={{ width: "100%", input: { color: 'white' }}} />
                 </Grid>
                 <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
-                  <TextField error value={message} onChange={(e)=>{setMessage(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Message" sx={{ width: "100%" }} />
+                  <TextField error value={message} onChange={(e)=>{setMessage(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Message" sx={{ width: "100%", input: { color: 'white' } }} />
                 </Grid>
                 <Grid item md={12}  sm={12} xs={12} sx={{ paddingTop: "40px" ,justifyContent:"center",display:"flex",alignItems:"center"}}>
                   
