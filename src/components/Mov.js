@@ -61,12 +61,12 @@ const [data, setData] = React.useState([]);
   }, []);
 
   return (
-    <Grid container spacing={2} sx={{justifyContent:"center",alignItems:"center",display:"flex"}}>
+    <Grid container spacing={2} sx={{justifyContent:"center",alignItems:"center",display:"flex", paddingLeft:"5%"}}>
         {data?<>
         {console.log(data)}
             {data.map((item) => {
                 return(
-            <Grid item md={4} sm={12} xs={12}>
+            <Grid item md={3} sm={12} xs={12}>
                 {console.log("item:",item)}
         <Card sx={{ maxWidth: 300,maxHeight:1000,textAlign:"center" }}>
       <CardHeader

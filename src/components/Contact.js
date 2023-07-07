@@ -8,6 +8,7 @@ import axios from 'axios';
 import { FormControl } from '@mui/base';
 import { useState } from 'react';
 import map from '../images/map.jpg' 
+import './Contact.css'
 export default function Contact() {
 
   const [name,setName]=useState("");
@@ -123,7 +124,7 @@ export default function Contact() {
         </Grid>
         <Grid item md={6} sx={{ paddingTop: "20px" }}>
           <Grid container>
-            <Grid item md={8} sx={{ backgroundColor: "grey", height: "570px", padding: "20px", paddingTop: "40px" , borderRadius:"10px"}}>
+            <Grid item md={8} className='contactus' >
               <Grid container>
                 <Grid item md={12} sm={12} xs={12} sx={{color:"#9a9f75",fontSize:"40px", fontStyle :"bold", fontWeight :"bold", paddingTop: "20px" }}>
                   I'm interested...

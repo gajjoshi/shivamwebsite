@@ -74,7 +74,7 @@ export default function Navbar() {
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div style={{paddingLeft:480}}>
+            <div style={{paddingLeft:"35%"}}>
               <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
               <div className="navbar-nav mb-4 mb-lg-0">
                 <Link to="home" smooth={true} duration={300}>

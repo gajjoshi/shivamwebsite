@@ -1,0 +1,31 @@
+.contactus{
+    background: rgba( 255, 82, 82, 0.15 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+ height: 570px;
+  padding: 20px;
+  padding-top: 40px ;
+   border-radius:10px
+}
+
+.chotu{
+    background: rgba( 255, 82, 82, 0.1 );
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+margin:10px;
+}
+.chotu2{
+    background: rgba( 228, 97, 97, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import imdb from '../images/imdb.png';
+import './Contact.css'
 
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -24,6 +25,7 @@ const AboutUs = () => {
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
+    
   };
   const [open, setOpen] = React.useState(false);
   const [show, setShow] = useState([]);
@@ -105,7 +107,7 @@ const AboutUs = () => {
   return (
     <>
         <Grid container sx={{backgroundColor:""}}>        
-        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'90px',md:"310px"},paddingTop: { xs: 0, md: '80px',lg:"80px" }}}>
+        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'80px',md:"310px"},paddingTop: { xs: 5, md: '80px',lg:"80px" }}}>
         <div style={{ paddinTop: 0, fontSize: 60, paddingLeft: 30, color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
             OUR
           </div>
@@ -216,11 +218,12 @@ const AboutUs = () => {
           open={open}
           onClose={handleClose}
           aria-labelledby="modal-modal-title"
+          className="chotu2"
           aria-describedby="modal-modal-description"
         >
-          <Box sx={style}>
+          <Box sx={style} className="chotu2">
             {show ? <>
-              <Grid container>
+              <Grid container >
                 <Grid item md={3}>
                   <Grid container>
                     <Grid item md={12}>
