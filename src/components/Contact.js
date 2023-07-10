@@ -28,10 +28,15 @@ export default function Contact() {
       {
         setError("*Email is required");
       }
+      else if(phone=="")
+      {
+        setError("*Phone is required");
+      }
       else if(message=="")
       {
         setError("*Message is required");
       }
+      
       else
       {
         setError("");
@@ -41,9 +46,10 @@ export default function Contact() {
   const submit = () => {
     const FormData = require('form-data');
     let data = new FormData();
+    let ph="+91"+phone;
     data.append('name', name);
     data.append('email', email);
-    data.append('phone', phone);
+    data.append('phone', ph);
     data.append('message', message);
 
     let config = {
@@ -56,10 +62,15 @@ export default function Contact() {
     async function makeRequest() {
       try {
         const response = await axios.request(config);
-        //console.log((response.data));
+        console.log((response.data));
+        setEmail("");
+        setName("");
+        setPhone("");
+        setMessage("");
+
       }
       catch (error) {
-        //console.log(error);
+        console.log(error);
       }
     }
 
@@ -141,12 +152,15 @@ export default function Contact() {
                 <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
                   <TextField error value={message} onChange={(e)=>{setMessage(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Message" sx={{ width: "100%", input: { color: 'white' } }} />
                 </Grid>
-                <Grid item md={12}  sm={12} xs={12} sx={{ paddingTop: "40px" ,justifyContent:"center",display:"flex",alignItems:"center"}}>
+                <Grid item md={12}  sm={12} xs={12} sx={{ paddingTop: "20px" ,justifyContent:"start",display:"flex",alignItems:"center"}}>
+                <div style={{color:"red"}}>{error}</div>
+                </Grid>
+                <Grid item md={12}  sm={12} xs={12} sx={{ paddingTop: "30px" ,justifyContent:"center",display:"flex",alignItems:"center"}}>
                   
                   <Button onClick={check} sx={{ backgroundColor: "#C61414", color: "white",fontWeight :"bold ", borderRadius: 20, padding: "5px", width: "30%", "&:hover": { backgroundColor: "#C61414", color: "white", borderRadius: 20, padding: "5px", width: "30%" } }}>
                     Send
                   </Button>
-                  <div style={{color:"red"}}>{error}</div>
+                  
                 </Grid>
               </Grid>
 

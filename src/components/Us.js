@@ -8,8 +8,8 @@ export default function Us() {
   const handleScroll = () => {
     const scrollX = window.scrollX || window.pageXOffset;
     const scrollY = window.scrollY || window.pageYOffset;
-    console.log('Scroll X:', scrollX);
-    console.log('Scroll Y:', scrollY);
+    // console.log('Scroll X:', scrollX);
+    // console.log('Scroll Y:', scrollY);
   };
 
   useEffect(() => {

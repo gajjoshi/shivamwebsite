@@ -54,6 +54,7 @@ const AboutUs = () => {
       try {
         const response = await axios.request(config1);
         setData1(response.data);
+        console.log(response.data);
       }
       catch (error) {
         console.log(error);
@@ -119,13 +120,12 @@ const AboutUs = () => {
         <Carousel >
           <Carousel.Item interval={500000} style={{ padding: '60px' }}>
             <Grid container >
-
-              <Grid item md={1} sm={0} xs={0}></Grid>
+            <Grid item md={0.75} xs={0.5} sm={0}></Grid>
               {data1.length > 0 ? <>
                 {data1.map(item => (
 
                   <>
-                    <Grid item md={5} xs={12} sm={12}>
+                    <Grid item md={3.5} xs={12} sm={12}>
                       <Grid container>
                         <Grid item md={12} xs={12} sm={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                           <Button onClick={() => handleOpen(item)}>
@@ -147,7 +147,7 @@ const AboutUs = () => {
 
 
               </> : <></>}
-              <Grid item md={1} sm={0} xs={0}></Grid>
+              <Grid item md={0.75} xs={0.5} sm={0}></Grid>
             </Grid>
 
           </Carousel.Item>
@@ -232,14 +232,15 @@ const AboutUs = () => {
                     <Grid item md={12}>
                       Social Media:
                     </Grid>
-                    <Grid item md={4}>
+                    <Grid item md={6}>
+                    <a href={show.imdb_id} target='_blank'>
                       <YouTubeIcon />
+                      </a>
                     </Grid>
-                    <Grid item md={4}>
+                    <Grid item md={6}>
+                    <a href={show.insta_id} target='_blank'>
                       <InstagramIcon />
-                    </Grid>
-                    <Grid item md={4}>
-                      <FacebookIcon />
+                      </a>
                     </Grid>
                   </Grid>
 
