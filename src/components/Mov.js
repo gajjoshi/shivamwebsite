@@ -6,7 +6,7 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import axios from 'axios';
-
+import './SlaveDetails.css';
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -63,30 +63,24 @@ const [data, setData] = React.useState([]);
   return (
     <Grid container spacing={5} sx={{justifyContent:"center",alignItems:"center",display:"flex", paddingLeft:"5%"}}>
         {data?<>
-        {console.log(data)}
             {data.map((item,i) => {
-              console.log(i);
                 return(
                   <>
             <Grid item md={3} sm={12} xs={12}>
-                {console.log("item:",item)}
-        <Card sx={{ maxWidth: 300,maxHeight:1000,textAlign:"center" }}>
-      <CardHeader
-        
-        title={item.name}
-      >hii</CardHeader>
+        <Card sx={{ maxWidth: 300,maxHeight:1000,textAlign:"center" }} className='basbas'>
+      <CardHeader className='basbas'
+         title={item.name}
+      ></CardHeader>
       <CardMedia
         component="img"
         // height="400"
         width="100%"
         image={item.image}
-        alt="Paella dish"
+        alt=""
       />
     </Card>
         </Grid>
 
-
-        {((i+1)%4==0)?<><hr></hr></>:<></>}
         </>
         
                 )

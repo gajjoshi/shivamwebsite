@@ -151,7 +151,7 @@ const AboutUs = () => {
             </Grid>
 
           </Carousel.Item>
-          <Carousel.Item interval={2000} style={{ padding: '60px' }}>
+          {/* <Carousel.Item interval={2000} style={{ padding: '60px' }}>
             <Grid container>
               <Grid item md={0.75} xs={0.5} sm={0}></Grid>
               {data2.length > 0 ? <>
@@ -180,7 +180,7 @@ const AboutUs = () => {
               </> : <></>}
               <Grid item md={0.75} xs={0.5} sm={0}></Grid>
             </Grid>
-          </Carousel.Item>
+          </Carousel.Item> */}
           <Carousel.Item interval={2000} style={{ padding: '60px' }}>
             <Grid container>
             <Grid item md={0.75} xs={0.5} sm={0}></Grid>
