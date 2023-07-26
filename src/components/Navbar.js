@@ -12,6 +12,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import logo from '../images/logo.png';
 import './Navbar.css';
+import Producerbio from './Producerbio';
 export default function Navbar() {
   const handleScroll = () => {
     const scrollX = window.scrollX || window.pageXOffset;
@@ -146,6 +147,9 @@ export default function Navbar() {
 
       <div id="home">
         <Home></Home>
+      </div>
+      <div id="bio">
+        <Producerbio />
       </div>
       <div id="us">
         <Us></Us>
