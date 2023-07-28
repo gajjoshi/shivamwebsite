@@ -1,42 +1,53 @@
-import React from "react";
+import React, { useEffect } from "react";
 import head from "../images/head.png";
 import "./Home.css";
-import image from "../images/7string.png";
 import Carousel from "react-bootstrap/Carousel";
 import { dividerClasses } from "@mui/material";
-
+import axios from "axios";
+import { useState } from "react";
 import * as ReactDOM from "react-dom";
 
 const Home = () => {
+  const [image, setImage] = useState("");
+  useEffect(() => {
+
+    let config = {
+      method: 'get',
+      maxBodyLength: Infinity,
+      url: 'https://prodhouse.pythonanywhere.com/image/',
+      headers: { }
+    };
+    
+    async function makeRequest() {
+      try {
+        const response = await axios.request(config);
+        console.log((response.data));
+        setImage(response.data);
+      }
+      catch (error) {
+        console.log(error);
+      }
+    }
+    
+    makeRequest();
+    
+    }, []);
   return (
     <div>
       <Carousel style={{marginTop:'100px'}} >
-        <Carousel.Item interval={1000}>
-        <div style={{backgroundImage: "url($(./images/7string.png))"}} >
-        {/* <div style={{backgroundImage: `url(${image})`}}> */}
-
-
-
+      {image?image.map((item,index)=>{
+        console.log(item.img)
+        return(
+          <Carousel.Item interval={4000}>
+        <div style={{backgroundImage:  `url(${item.img})`,height:"500px"}} >
+          hii
           <Carousel.Caption>
-            <h3 style={{color:'white'}}>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
           </div>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        )
+      }):null}
+        
       </Carousel> 
     </div>
   );

@@ -54,7 +54,6 @@ const AboutUs = () => {
       try {
         const response = await axios.request(config1);
         setData1(response.data);
-        console.log(response.data);
       }
       catch (error) {
         console.log(error);
