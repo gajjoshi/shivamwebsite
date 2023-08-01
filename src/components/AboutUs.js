@@ -46,13 +46,14 @@ const AboutUs = () => {
     let config1 = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: 'https://prodhouse.pythonanywhere.com/search2/?slave_type=Core',
+      url: 'https://prodhouse.pythonanywhere.com/search2/?people_type=Core',
       headers: {}
     };
 
     async function makeRequest1() {
       try {
         const response = await axios.request(config1);
+        console.log(response.data);
         setData1(response.data);
       }
       catch (error) {
@@ -65,14 +66,16 @@ const AboutUs = () => {
     let config2 = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: 'https://prodhouse.pythonanywhere.com/search2/?slave_type=Employee',
+      url: 'https://prodhouse.pythonanywhere.com/search2/?people_type=Employee',
       headers: {}
     };
 
     async function makeRequest2() {
       try {
         const response = await axios.request(config2);
+        console.log(response.data);
         setData2(response.data);
+
       }
       catch (error) {
         console.log(error);
@@ -84,13 +87,14 @@ const AboutUs = () => {
     let config3 = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: "https://prodhouse.pythonanywhere.com/search2/?slave_type=Creatives",
+      url: "https://prodhouse.pythonanywhere.com/search2/?people_type=Creatives",
       headers: {}
     };
 
     async function makeRequest3() {
       try {
         const response = await axios.request(config3);
+        console.log(response.data)
         setData3(response.data);
       }
       catch (error) {

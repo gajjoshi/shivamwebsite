@@ -21,7 +21,7 @@ const Home = () => {
     async function makeRequest() {
       try {
         const response = await axios.request(config);
-        console.log((response.data));
+        //console.log((response.data));
         setImage(response.data);
       }
       catch (error) {
@@ -36,11 +36,10 @@ const Home = () => {
     <div>
       <Carousel style={{marginTop:'100px'}} >
       {image?image.map((item,index)=>{
-        console.log(item.img)
+        //console.log(item.img)
         return(
           <Carousel.Item interval={4000}>
         <div style={{backgroundImage:  `url(${item.img})`,height:"500px"}} >
-          hii
           <Carousel.Caption>
           </Carousel.Caption>
           </div>
