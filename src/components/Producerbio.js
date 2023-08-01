@@ -76,11 +76,14 @@ const Container = styled.div`
       flex-direction: column;
       .avatar {
         img {
-          width: 300px;
+          width: 80%; /* Adjust the width of the avatar image for smaller screens */
+          margin: 0 auto; /* Center the avatar image */
+          display: block; /* Override the 'float: left;' from the Avatar component */
         }
       }
+
       .about {
-        margin-top: 10px;
+        margin-top: 20px; /* Increase the margin between the avatar and the about content */
       }
     }
   }
@@ -162,37 +165,7 @@ const About = styled.div`
 `;
 
 const SkillsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-  animation: 1s ease-in 0s 1 ${fadeIn};
-
-  button {
-    flex: 1;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    background: #fddb33;
-    cursor: pointer;
-    font-weight: bold;
-    width: 250px;
-    height: 40px;
-    font-family: "Nunito", sans-serif;
-    box-shadow: 1px 1px 10px 0px #2222222b;
-    transition: 0.2s all;
-    &:hover {
-      box-shadow: 1px 1px 1px 0px #2222222b;
-    }
-    &:focus,
-    &:active {
-      outline: 0;
-      box-shadow: 1px 1px 10px 0px #22222280;
-    }
-  }
+  /* ... existing styles ... */
 `;
 
 const Producerbio = () => {
@@ -200,11 +173,11 @@ const Producerbio = () => {
     <div style={{ paddingBottom: "9rem", paddingTop: "5rem" }}>
       <Container>
         <div className="circles"></div>
-        <DetailsContainer>
-          <Avatar>
+        <DetailsContainer className="details-container">
+          <Avatar className="avatar">
             <img src="https://i.suar.me/l3zYA/l" className="img-fluid" alt="" />
           </Avatar>
-          <About>
+          <About className="about">
             <div className="name">
               <p>Hello There!</p>
               <h1>I'm Pinngkash Enter</h1>
@@ -220,11 +193,6 @@ const Producerbio = () => {
             </div>
           </About>
         </DetailsContainer>
-        {/* <SkillsContainer>
-        <button>Reader</button>
-        <button>Coder</button>
-        <button>Designer</button>
-      </SkillsContainer> */}
       </Container>
     </div>
   );
