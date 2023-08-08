@@ -17,19 +17,20 @@ export default function Navbar() {
   const handleScroll = () => {
     const scrollX = window.scrollX || window.pageXOffset;
     const scrollY = window.scrollY || window.pageYOffset;
+    console.log(scrollY);
     if(scrollY>=0 && scrollY<=320)
     { 
       setSelect(1)
     }
-    if(scrollY>=400 && scrollY<=900)
+    if(scrollY>=400 && scrollY<=1100)
     { 
       setSelect(5)
     }
-    if(scrollY>=900 && scrollY<=1200)
+    if(scrollY>=1100 && scrollY<=1500)
     {
       setSelect(3)
     }
-    if(scrollY>=1200 && scrollY<=1600)
+    if(scrollY>=1500 && scrollY<=1600)
     {
       setSelect(2)
     }
@@ -78,36 +79,36 @@ export default function Navbar() {
             <div style={{paddingLeft:"35%"}}>
               <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
               <div className="navbar-nav mb-4 mb-lg-0">
-                <Link to="home" smooth={true} duration={300}>
+                <Link to="home" smooth={true} duration={300} offset={-200}>
                   <div style={st}>
-                  <div style={styles1} onClick={() => setSelect(1)}>
+                  <div style={styles1} >
                     <a className="nav-link active" aria-current="page" href="#">
                       <div style={s1}>Home</div>
                     </a>
                   </div>
                   </div>
                 </Link>
-                <Link to="us" smooth={true} duration={300}>
+                <Link to="us" smooth={true} duration={300} offset={-670}>
                 <div style={st}>
-                  <div style={styles5} onClick={() => setSelect(5)}>
+                  <div style={styles5} >
                     <a className="nav-link active" aria-current="page" href="#">
                       <div style={s5}>Our Story</div>
                     </a>
                   </div>
                 </div>
                 </Link>
-                <Link to="project" smooth={true} duration={300}>
+                <Link to="project" smooth={true} duration={300} offset={-370}>
                   <div style={st}>
-                  <div style={styles3} onClick={() => setSelect(3)}>
+                  <div style={styles3} >
                     <a className="nav-link active" href="#">
                       <div style={s3}>Projects</div>
                     </a>
                   </div>
                   </div>
                 </Link>
-                <Link to="about" smooth={true} duration={300}>
+                <Link to="about" smooth={true} duration={300} offset={-370}>
                   <div style={st}>
-                  <div style={styles2} onClick={() => setSelect(2)}>
+                  <div style={styles2} >
                     <a className="nav-link active" href="#">
                       <div style={s2}>About us</div>
                     </a>
@@ -116,7 +117,7 @@ export default function Navbar() {
                 </Link>
                 <Link to="contact" smooth={false} duration={500}>
                   <div style={st}>
-                  <div style={styles4} onClick={() => setSelect(4)}>
+                  <div style={styles4} >
                     <a className="nav-link active" href="#">
                       <div style={s4}>Contact us</div>
                     </a>
