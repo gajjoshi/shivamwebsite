@@ -190,14 +190,14 @@ const AboutUs = () => {
               {data3.length > 0 ? <>
                 {data3.map(item => (
                   <>
-                    <Grid item md={3.5} sm={12} xs={12} sx={{ justifyContent: "center", display: "block", textAlign: "center" }}>
+                    <Grid item md={3.5} sm={12} xs={12} >
                       <Grid container>
-                        <Grid item md={12} sx={{ paddingLeft: 2 }}>
+                        <Grid item md={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                         <Button onClick={() => handleOpen(item)}>
                             <img src={item.image} style={{ width: 120, height: 120, borderRadius: 100 }}></img>
                           </Button>
                         </Grid>
-                        <Grid item md={12} sx={{display:"grid",placeItems:"center"}}>
+                        <Grid item md={12} sx={{ justifyContent: "center", display: "block", textAlign: "center"}}>
                           <Typography variant="h6" sx={{ color: "white", paddingLeft: 0 }}>
                             {item.name}
                           </Typography>
