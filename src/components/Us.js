@@ -21,17 +21,25 @@ export default function Us() {
 
   return (
     <div>
-      <Grid container sx={{ backgroundColor: '' }}>
-        <Grid item xs={12} md={5} sx={{ backgroundColor: '', height: { xs: 200, sm: 300 }, display: 'grid' }}>
+      <Grid container sx={{ marginBottom:"100px"}}>
+        <Grid item xs={12} md={5} sx={{ backgroundColor: '', height: { xs: 200, sm: 300 }, paddingTop: { xs: '20px', sm: '70px' },display: 'flex',justifyContent:"center",alignItems:"center" }}>
           <Typography className='heading' variant="h6" sx={{ fontFamily: 'Rosarivo', fontSize: { xs: '40px', sm: '60px' }, color: '#b62e2f', textAlign: { xs: 'center', sm: 'center',md:'center' } }}>
             <motion.div initial={{ x: { xs: 100, sm: 100, md:200}  }} animate={{ x: { xs: 300, sm: 300, md:400 } }} transition={{ delay: 0.5, duration: 2, type: 'spring', stiffness: 100 }}>WHO</motion.div>
             <motion.div initial={{ x: { xs: 100, sm: 100, md:300}  }} animate={{ x: { xs: 300, sm: 300, md:480} }} transition={{ delay: 0.5, duration: 0.5, type: 'ease' }}>ARE WE</motion.div>
               {/* <motion.div initial={{ x: { xs: 100, sm: 100, md:200}  }} animate={{ x: { xs: 300, sm: 300, md:400} }} transition={{ delay: 0.5, duration: 2, type: 'spring', stiffness: 100 }}>WE</motion.div> */}
           </Typography>
         </Grid>
-        <Grid item xs={12} md={5} sx={{ height: { xs: 200, sm: 300 }, color: 'white', paddingTop: { xs: '20px', sm: '70px' }, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75' }}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quas ratione animi at ullam, eaque neque provident aliquam reprehenderit aliquid soluta repellendus dolores. Repellat accusantium possimus quaerat impedit maiores itaque!
-        </Grid>
+        <Grid item xs={12} md={5} sx={{ height: { xs: 200, sm: 300 }, color: 'white', paddingTop: { xs: '20px', sm: '70px' }, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75',fontSize:"25px" }}>
+            <span style={{textDecorationLine:"underline" ,fontWeight:"bold",backgroundColor:"#9a9f75",color:'black'}}>Welcome to Pinngaksh Enterconn</span>
+            <br/>
+            The nexus of innovative storytelling. We specialize in curating gripping narratives that transcend conventions and kindle the flames of imagination.
+
+            With a fusion of creativity and expertise, we craft unique tales that leave an indelible mark on our viewers. Our productions are more than content – they are immersive experiences that captivate and resonate.
+
+            Join us in exploring new dimensions of entertainment, where each story is a journey and every frame is a brushstroke of brilliance.
+            <br/>
+            <span style={{textDecorationLine:"underline" ,fontWeight:"bold",backgroundColor:"#9a9f75",color:'black'}}> At Pinngaksh Enterconn, we don't just tell stories; we redefine them</span>
+           </Grid>
         <Grid item md={2} xs={0} sm={0}/>
       </Grid>
     </div>

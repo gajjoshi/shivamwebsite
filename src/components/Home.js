@@ -23,9 +23,10 @@ const Home = () => {
 
   return (
     <div>
-      <Carousel style={{ marginTop: "100px" }}>
+      <Carousel style={{ marginTop: "1px" }}>
         {images.map((item, index) => (
           <Carousel.Item key={index} interval={40000}>
+            <a href="https://drive.google.com/file/d/1iP5Nfv5pq10GiK_iPRAwD8Id8Pz8l9jd/view?usp=sharing" target="_blank">
             <div
               style={{
                 backgroundImage:`url(${item.img})`,
@@ -34,11 +35,12 @@ const Home = () => {
                 backgroundPosition: "center",
               }}
             >
-
+            
               <Carousel.Caption>
                 {/* Add any caption content if needed */}
               </Carousel.Caption>
             </div>
+            </a>
           </Carousel.Item>
         ))}
       </Carousel>

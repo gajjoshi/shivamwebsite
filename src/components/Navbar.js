@@ -152,9 +152,9 @@ export default function Navbar() {
       <div id="home">
         <Home></Home>
       </div>
-      <div id="bio">
+      {/* <div id="bio">
         <Producerbio />
-      </div>
+      </div> */}
       <div id="us">
         <Us></Us>
       </div>
