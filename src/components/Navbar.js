@@ -13,6 +13,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import logo from '../images/logo.png';
 import './Navbar.css';
 import Producerbio from './Producerbio';
+import pe from '../images/pe.png';
 export default function Navbar() {
   const handleScroll = () => {
     const scrollX = window.scrollX || window.pageXOffset;
@@ -67,16 +68,18 @@ export default function Navbar() {
   return (
     <div className='fullbackground'>
       <div style={{ position: 'sticky', top: 0, zIndex: 100 }}>
-        <div style={{ backgroundColor: '#2b2c2c', padding: 3, paddingLeft: 10 }}>
-          <img src={logo} style={{ width: '4%' }} />
-        </div>
+        {/* <div style={{ backgroundColor: '#2b2c2c', padding: 1, paddingLeft: 10 }}>
+          <img src={pe} style={{ width: '4%',padding:0 }} />
+        </div> */}
         <div>
           <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 justify-content-start" style={{ backgroundColor: '#b62e2f' }}>
           <div className="container-fluid" style={{ backgroundColor: '#b62e2f' }}>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div style={{paddingLeft:"35%"}}>
+            <img src={pe} style={{ width: '2%',padding:0 }} />
+            <div style={{paddingLeft:"15%"}}>
+            
               <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
               <div className="navbar-nav mb-4 mb-lg-0">
                 <Link to="home" smooth={true} duration={300} offset={-200}>

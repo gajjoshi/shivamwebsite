@@ -61,7 +61,7 @@ const [data, setData] = React.useState([]);
   }, []);
 
   return (
-    <Grid container spacing={5} sx={{justifyContent:"center",alignItems:"center",display:"flex", paddingLeft:"5%"}}>
+    <Grid container spacing={5} sx={{justifyContent:"center",alignItems:"center",display:"flex", paddingLeft:"5%" , paddingTop:'0%'}}>
         {data?<>
             {data.map((item,i) => {
                 return(

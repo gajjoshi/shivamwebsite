@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import imdb from '../images/imdb.png';
 import './Contact.css'
-
+import imdb1 from '../images/imdb1.png';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -132,11 +132,11 @@ const AboutUs = () => {
                       <Grid container>
                         <Grid item md={12} xs={12} sm={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                           <Button onClick={() => handleOpen(item)}>
-                            <img src={item.image} style={{ width: 120, height: 120, borderRadius: 100 }}></img>
+                            <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px'}}></img>
                           </Button>
                         </Grid>
                         <Grid item md={12} sm={12} xs={12} sx={{ justifyContent: "center", display: "block", textAlign: "center" }}>
-                          <Typography variant="h6" sx={{ color: "white"}}>
+                          <Typography variant="h6" sx={{ color: "white" , font:'bold'}}>
                             {item.name}
                           </Typography>
                           <Typography variant="h6" sx={{ color: "white"}}>
@@ -194,7 +194,7 @@ const AboutUs = () => {
                       <Grid container>
                         <Grid item md={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                         <Button onClick={() => handleOpen(item)}>
-                            <img src={item.image} style={{ width: 120, height: 120, borderRadius: 100 }}></img>
+                            <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px' }}></img>
                           </Button>
                         </Grid>
                         <Grid item md={12} sx={{ justifyContent: "center", display: "block", textAlign: "center"}}>
@@ -237,7 +237,7 @@ const AboutUs = () => {
                     </Grid>
                     <Grid item md={6}>
                     <a href={show.imdb_id} target='_blank'>
-                      <YouTubeIcon />
+                      <img src={imdb1} style={{width:"80%"}} alt='imdb'/>
                       </a>
                     </Grid>
                     <Grid item md={6}>

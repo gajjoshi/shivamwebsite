@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-
+import pe from '../images/pe.png'
 const fadeIn = keyframes`
   0% {
     opacity: 0;
@@ -175,7 +175,7 @@ const Producerbio = () => {
         <div className="circles"></div>
         <DetailsContainer className="details-container">
           <Avatar className="avatar">
-            <img src="https://i.suar.me/l3zYA/l" className="img-fluid" alt="" />
+            <img src={pe} className="img-fluid" alt="" />
           </Avatar>
           <About className="about">
             <div className="name">

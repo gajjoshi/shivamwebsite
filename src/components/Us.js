@@ -25,8 +25,8 @@ export default function Us() {
         <Grid item xs={12} md={5} sx={{ backgroundColor: '', height: { xs: 200, sm: 300 }, display: 'grid' }}>
           <Typography className='heading' variant="h6" sx={{ fontFamily: 'Rosarivo', fontSize: { xs: '40px', sm: '60px' }, color: '#b62e2f', textAlign: { xs: 'center', sm: 'center',md:'center' } }}>
             <motion.div initial={{ x: { xs: 100, sm: 100, md:200}  }} animate={{ x: { xs: 300, sm: 300, md:400 } }} transition={{ delay: 0.5, duration: 2, type: 'spring', stiffness: 100 }}>WHO</motion.div>
-            <motion.div initial={{ x: { xs: 100, sm: 100, md:300}  }} animate={{ x: { xs: 300, sm: 300, md:480} }} transition={{ delay: 0.5, duration: 0.5, type: 'ease' }}>ARE</motion.div>
-            <motion.div initial={{ x: { xs: 100, sm: 100, md:200}  }} animate={{ x: { xs: 300, sm: 300, md:400} }} transition={{ delay: 0.5, duration: 2, type: 'spring', stiffness: 100 }}>WE</motion.div>
+            <motion.div initial={{ x: { xs: 100, sm: 100, md:300}  }} animate={{ x: { xs: 300, sm: 300, md:480} }} transition={{ delay: 0.5, duration: 0.5, type: 'ease' }}>ARE WE</motion.div>
+              {/* <motion.div initial={{ x: { xs: 100, sm: 100, md:200}  }} animate={{ x: { xs: 300, sm: 300, md:400} }} transition={{ delay: 0.5, duration: 2, type: 'spring', stiffness: 100 }}>WE</motion.div> */}
           </Typography>
         </Grid>
         <Grid item xs={12} md={5} sx={{ height: { xs: 200, sm: 300 }, color: 'white', paddingTop: { xs: '20px', sm: '70px' }, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75' }}>
