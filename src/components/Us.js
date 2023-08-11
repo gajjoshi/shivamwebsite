@@ -29,7 +29,7 @@ export default function Us() {
               {/* <motion.div initial={{ x: { xs: 100, sm: 100, md:200}  }} animate={{ x: { xs: 300, sm: 300, md:400} }} transition={{ delay: 0.5, duration: 2, type: 'spring', stiffness: 100 }}>WE</motion.div> */}
           </Typography>
         </Grid>
-        <Grid item xs={12} md={5} sx={{ height: { xs: 200, sm: 300 }, color: 'white', paddingTop: { xs: '20px', sm: '70px' }, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75',fontSize:"25px" }}>
+        <Grid item xs={12} md={7} sx={{ height: { xs: 200, sm: 300 }, color: 'white', paddingTop: { xs: '20px', sm: '70px' }, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75',fontSize:"25px" }}>
             <span style={{textDecorationLine:"underline" ,fontWeight:"bold",backgroundColor:"#9a9f75",color:'black'}}>Welcome to Pinngaksh Enterconn</span>
             <br/>
             The nexus of innovative storytelling. We specialize in curating gripping narratives that transcend conventions and kindle the flames of imagination.
@@ -40,7 +40,7 @@ export default function Us() {
             <br/>
             <span style={{textDecorationLine:"underline" ,fontWeight:"bold",backgroundColor:"#9a9f75",color:'black'}}> At Pinngaksh Enterconn, we don't just tell stories; we redefine them</span>
            </Grid>
-        <Grid item md={2} xs={0} sm={0}/>
+        <Grid item md={0} xs={0} sm={0}/>
       </Grid>
     </div>
   );
