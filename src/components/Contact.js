@@ -79,7 +79,7 @@ export default function Contact() {
   }
   return (
     <>
-    <div style={{backgroundColor:"", paddingTop:'200px'}}>
+    <div style={{backgroundColor:"", paddingTop:'150px'}}>
       <FormControl>
       <Grid container rowSpacing={3} sx={{backgroundColor:""}}>
         <Grid item md={6} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
@@ -129,7 +129,7 @@ export default function Contact() {
             <Grid item md={1} sm={1} xs={1}></Grid>
           </Grid>
         </Grid>
-        <Grid item md={6} sx={{ paddingTop: "20px" }}>
+        <Grid className='hihello' item md={6} sx={{ paddingTop: "20px" ,padding:3}}>
           <Grid container>
             <Grid item md={8} className='contactus' >
               <Grid container>

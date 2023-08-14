@@ -91,7 +91,7 @@ export default function Navbar() {
                   </div>
                   </div>
                 </Link>
-                <Link to="us" smooth={true} duration={300} offset={-670}>
+                <Link to="us" smooth={true} duration={300} offset={-170}>
                 <div style={st}>
                   <div style={styles5} >
                     <a className="nav-link active" aria-current="page" href="#">
@@ -100,7 +100,7 @@ export default function Navbar() {
                   </div>
                 </div>
                 </Link>
-                <Link to="project" smooth={true} duration={300} offset={-370}>
+                <Link to="project" smooth={true} duration={300} offset={-170}>
                   <div style={st}>
                   <div style={styles3} >
                     <a className="nav-link active" href="#">
