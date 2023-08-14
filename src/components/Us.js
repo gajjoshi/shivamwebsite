@@ -29,8 +29,8 @@ export default function Us() {
               {/* <motion.div initial={{ x: { xs: 100, sm: 100, md:200}  }} animate={{ x: { xs: 300, sm: 300, md:400} }} transition={{ delay: 0.5, duration: 2, type: 'spring', stiffness: 100 }}>WE</motion.div> */}
           </Typography>
         </Grid>
-        <Grid item xs={12} md={7} sx={{ height: { xs: 200, sm: 300 }, color: 'white', paddingTop: { xs: '20px', sm: '70px' },padding:{xs:'10px'}, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75',fontSize:"25px" }}>
-            <span style={{textDecorationLine:"underline" ,fontWeight:"bold",backgroundColor:"#9a9f75",color:'black'}}>Welcome to Pinngaksh Enterconn</span>
+        <Grid item xs={12} md={7} sx={{ height: { xs: 200, sm: 300 }, color: 'white', paddingTop: { xs: '20px', sm: '70px' },padding:{xs:'10px'}, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75',fontSize:{xs:"15px",md:"25px"} }}>
+            <span >Welcome to Pinngaksh Enterconn</span>
             <br/>
             The nexus of innovative storytelling. We specialize in curating gripping narratives that transcend conventions and kindle the flames of imagination.
 
@@ -38,7 +38,7 @@ export default function Us() {
 
             Join us in exploring new dimensions of entertainment, where each story is a journey and every frame is a brushstroke of brilliance.
             <br/>
-            <span style={{textDecorationLine:"underline" ,fontWeight:"bold",backgroundColor:"#9a9f75",color:'black'}}> At Pinngaksh Enterconn, we don't just tell stories; we redefine them</span>
+            <span > At Pinngaksh Enterconn, we don't just tell stories; we redefine them</span>
            </Grid>
         <Grid item md={0} xs={12} sm={12} className='tp' />
       </Grid>
