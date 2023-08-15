@@ -74,9 +74,9 @@ export default function Navbar() {
         <div>
           <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 justify-content-start" style={{ backgroundColor: '#b62e2f' }}>
           <div className="container-fluid" style={{ backgroundColor: '#b62e2f' }}>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
-            </button>
+            </button> */}
             <img src={pe} style={{ width: '2%',padding:0 }} />
             <div style={{paddingLeft:"15%"}}>
             

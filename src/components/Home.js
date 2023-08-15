@@ -29,11 +29,12 @@ const Home = () => {
             <a href="https://drive.google.com/file/d/1iP5Nfv5pq10GiK_iPRAwD8Id8Pz8l9jd/view?usp=sharing" target="_blank">
             <div
               style={{
-                backgroundImage:`url(${item.img})`,
+                //backgroundImage:`url(${item.img})`,
                 height: "500px",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
+              className="banner"
             >
             
               <Carousel.Caption>

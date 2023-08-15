@@ -8,7 +8,12 @@ import axios from 'axios';
 import { FormControl } from '@mui/base';
 import { useState } from 'react';
 import map from '../images/map.jpg' 
+import map2 from '../images/map2.png'
 import './Contact.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 export default function Contact() {
 
   const [name,setName]=useState("");
@@ -67,7 +72,7 @@ export default function Contact() {
         setName("");
         setPhone("");
         setMessage("");
-
+        toast.success("Message sent successfully");
       }
       catch (error) {
         console.log(error);
@@ -114,13 +119,13 @@ export default function Contact() {
                   <LocationOnIcon sx={{ color: "red" }}></LocationOnIcon>
                 </IconButton>
                 <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75", paddingBottom : "50px" }}>
-                  Andheri west
+                Goregaon  East
                 </div>
               </div>
               <div>
                 <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75", paddingTop: "100px"}}>
-                  <a href="https://goo.gl/maps/hfN21Ekrruinavqz7" target="_blank">
-                  <img src={map} style={{width:"70%", paddingTop:"30px"}}/>
+                  <a href="https://www.google.com/maps/search/02+sunlight+,+PJ+Nehru+road+,+goregaon+east+mumbai+400063+maps/@19.097338,72.847325,17z/data=!3m1!4b1?entry=ttu" target="_blank">
+                  <img src={map2} style={{width:"70%", paddingTop:"30px"}}/>
                   </a>
                 </div>
               </div>
@@ -167,7 +172,7 @@ export default function Contact() {
       </Grid>
       </FormControl>
       </div>
-
+      <ToastContainer position='bottom-left'/>
     </>
   )
 }
