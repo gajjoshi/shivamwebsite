@@ -18,7 +18,7 @@ export default function Navbar() {
   const handleScroll = () => {
     const scrollX = window.scrollX || window.pageXOffset;
     const scrollY = window.scrollY || window.pageYOffset;
-    console.log(scrollY);
+    //console.log(scrollY);
     if(scrollY>=0 && scrollY<=300)
     { 
       setSelect(1)

@@ -53,7 +53,7 @@ const AboutUs = () => {
     async function makeRequest1() {
       try {
         const response = await axios.request(config1);
-        console.log(response.data);
+        //console.log(response.data);
         setData1(response.data);
       }
       catch (error) {
@@ -73,7 +73,7 @@ const AboutUs = () => {
     async function makeRequest2() {
       try {
         const response = await axios.request(config2);
-        console.log(response.data);
+        //console.log(response.data);
         setData2(response.data);
 
       }
@@ -94,7 +94,7 @@ const AboutUs = () => {
     async function makeRequest3() {
       try {
         const response = await axios.request(config3);
-        console.log(response.data)
+        //console.log(response.data)
         setData3(response.data);
       }
       catch (error) {
@@ -227,20 +227,20 @@ const AboutUs = () => {
           <Box sx={style} className="chotu2">
             {show ? <>
               <Grid container >
-                <Grid item md={3}>
+                <Grid item md={3} xs={12}>
                   <Grid container>
-                    <Grid item md={12}>
+                    <Grid item md={12} xs={12}>
                       <img src={show.image} style={{ width: 100, height: 100, borderRadius: 100 }}></img>
                     </Grid>
                     <Grid item md={12}>
                       Social Media:
                     </Grid>
-                    <Grid item md={6}>
+                    <Grid item md={6} xs={6}>
                     <a href={show.imdb_id} target='_blank'>
-                      <img src={imdb1} style={{width:"80%"}} alt='imdb'/>
+                      <img src={imdb1}  className='imdbsize' alt='imdb'/>
                       </a>
                     </Grid>
-                    <Grid item md={6}>
+                    <Grid item md={6} xs={6}>
                     <a href={show.insta_id} target='_blank'>
                       <InstagramIcon />
                       </a>
@@ -248,7 +248,7 @@ const AboutUs = () => {
                   </Grid>
 
                 </Grid>
-                <Grid item md={9} sx={{paddingLeft:5}}>
+                <Grid item md={9} xs={12} sx={{paddingLeft:5}}>
                   <Grid container rowSpacing={1}>
                     <Grid item md={12}>
                       <Typography variant="h7" >
