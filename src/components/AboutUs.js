@@ -15,18 +15,32 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const AboutUs = () => {
+  // const style = {
+  //   position: 'absolute',
+  //   top: '50%',
+  //   left: '50%',
+  //   transform: 'translate(-50%, -50%)',
+  //   width: 500,
+  //   bgcolor: 'background.paper',
+  //   border: '2px solid #000',
+  //   boxShadow: 24,
+  //   p: 4,
+    
+  // };
+
   const style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 500,
+    width: '90%', // Adjust the width for mobile view
+    maxWidth: 500, // Maximum width for larger screens
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
-    
   };
+
   const [open, setOpen] = React.useState(false);
   const [show, setShow] = useState([]);
   const handleOpen = (item) => {
@@ -154,36 +168,7 @@ const AboutUs = () => {
             </Grid>
 
           </Carousel.Item>
-          {/* <Carousel.Item interval={2000} style={{ padding: '60px' }}>
-            <Grid container>
-              <Grid item md={0.75} xs={0.5} sm={0}></Grid>
-              {data2.length > 0 ? <>
-                {data2.map(item => (
-                  <>
-                    <Grid item md={3.5} sm={12} xs={12} sx={{ justifyContent: "center", display: "block", textAlign: "center" }}>
-                      <Grid container>
-                        <Grid item md={12} sx={{ paddingLeft: 2 }}>
-                        <Button onClick={() => handleOpen(item)}>
-                            <img src={item.image} style={{ width: 120, height: 120, borderRadius: 100 }}></img>
-                          </Button>
-                        </Grid>
-                        <Grid item md={12} sx={{display:"grid",placeItems:"center"}}>
-                          <Typography variant="h6" sx={{ color: "white", paddingLeft: 0 }}>
-                            {item.name}
-                          </Typography>
-                          <Typography variant="h6" sx={{ color: "white", paddingLeft: 0 }}>
-                            {item.slave_type}
-                          </Typography>
-                        </Grid>
-                      </Grid>
-                    </Grid>
-                  </>
-
-                ))}
-              </> : <></>}
-              <Grid item md={0.75} xs={0.5} sm={0}></Grid>
-            </Grid>
-          </Carousel.Item> */}
+         
           <Carousel.Item interval={2000} style={{ padding: '60px' }}>
             <Grid container>
             <Grid item md={0.75} xs={0.5} sm={0}></Grid>
@@ -217,7 +202,7 @@ const AboutUs = () => {
         </Carousel>
         </Grid>
         </Grid>
-        <Modal
+        {/* <Modal
           open={open}
           onClose={handleClose}
           aria-labelledby="modal-modal-title"
@@ -274,7 +259,62 @@ const AboutUs = () => {
             </> : <></>}
 
           </Box>
-        </Modal>
+        </Modal> */}
+        <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        className="chotu2"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} className="chotu2">
+          {show ? (
+            <Grid container>
+              <Grid item xs={12} md={3}>
+                <Grid container>
+                  <Grid item xs={12}>
+                    <img src={show.image} style={{ width: 100, height: 100, borderRadius: 100 }} alt="Profile" />
+                  </Grid>
+                  <Grid item md={12} xs={4} >
+                      Social Media:
+                    </Grid>
+                  <Grid item xs={2}>
+                    <a href={show.imdb_id} target="_blank">
+                      <img src={imdb1} className="imdbsize" alt="imdb" />
+                    </a>
+                  </Grid>
+                  <Grid item xs={2}>
+                    <a href={show.insta_id} target="_blank">
+                      <InstagramIcon />
+                    </a>
+                  </Grid>
+                </Grid>
+              </Grid>
+              <Grid item xs={12} md={9} sx={{ paddingLeft: { xs: 0, md: 5 } }}>
+                <Grid container rowSpacing={1}>
+                  <Grid item xs={12}>
+                    <Typography variant="h7" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+                      Name: {show.name}
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Typography variant="h7" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+                      Description: {show.bio}
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Typography variant="h7" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
+                      Detail: {show.detail}
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          ) : (
+            <></>
+          )}
+        </Box>
+      </Modal>
     </>
   );
 };
