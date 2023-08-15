@@ -3,7 +3,8 @@ import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 import React from 'react'
 import './Contact.css'
-
+import current from '../images/7string.png'
+import future from '../images/future.jpg'
 export default function Project() {
     const prev=()=>{
         localStorage.setItem("select",1)
@@ -30,8 +31,8 @@ export default function Project() {
             <Grid item md={12} sm={0} xs={0} sx={{ height:{md:100,xs:30,sm:30} }}></Grid>
             <motion.div whileHover={{ scale: 1.4 }} className='chotu' style={{ backgroundColor: "" }}>
             <Grid item md={3} sx={{ padding: 3, height: "450px", }}>
-            <Typography variant='h4' sx={{ fontFamily: "Rosarivo", fontSize: 36, color: "black" }}>PREVIOUS</Typography>
-            <img style={{ width: "200px", height: "300px" }} src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png"></img>
+            <Typography variant='h4' sx={{ fontFamily: "Rosarivo", fontSize: 36, color: "white" }}>PREVIOUS</Typography>
+            <img style={{ width: "200px", height: "300px" }} src="https://res.cloudinary.com/dggmxmhlm/image/upload/f_auto,q_auto/j27xoaskm6dh3ylhsuyt"></img>
             <br/>
             <Link to='/movie'>
             <Button variant="contained" onClick={prev} sx={{ backgroundColor: "#f0f0f0", color: "black", borderRadius: 20, marginTop: 3, marginLeft: 6, "&:hover": { backgroundColor: "#f0f0f0", color: "black", borderRadius: 20 } }}>
@@ -44,8 +45,8 @@ export default function Project() {
             </motion.div>
                 <motion.div whileHover={{scale:1.4}} className='chotu'  style={{backgroundColor:""}}>
                 <Grid item md={3} sx={{padding:3,height:"450px"}}>
-                    <Typography variant='h4' sx={{fontFamily:"Rosarivo",fontSize:36,color:"black"}}>CURRENT</Typography>
-                    <img style={{width:"200px",height:"300px"}} src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png"></img>
+                    <Typography variant='h4' sx={{fontFamily:"Rosarivo",fontSize:36,color:"white"}}>CURRENT</Typography>
+                    <img style={{width:"200px",height:"300px"}} src={current}></img>
                     <br/>
                     <Link to='/movie'>
                     <Button variant="contained" onClick={curr} sx={{backgroundColor:"#D9D9D9",color:"black",borderRadius:20,marginTop:3,marginLeft:6,"&:hover": {backgroundColor:"#f0f0f0",color:"black",borderRadius:20}}}>More{'>'}</Button>
@@ -54,8 +55,8 @@ export default function Project() {
                 </motion.div>
                 <motion.div whileHover={{scale:1.4}} className='chotu' style={{backgroundColor:""}}>
                 <Grid item md={3} sx={{padding:3,height:"450px"}}>
-                    <Typography variant='h4' sx={{fontFamily:"Rosarivo",fontSize:36,color:"black"}}>UPCOMING</Typography>
-                    <img style={{width:"200px",height:"300px"}} src="https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png"></img>
+                    <Typography variant='h4' sx={{fontFamily:"Rosarivo",fontSize:36,color:"white"}}>UPCOMING</Typography>
+                    <img style={{width:"200px",height:"300px"}} src={future}></img>
                     <br/>
                     <Link to='/movie'>
                     <Button variant="contained" onClick={upc} sx={{backgroundColor:"#f0f0f0",color:"black",borderRadius:20,marginTop:3,marginLeft:6,"&:hover": {backgroundColor:"#f0f0f0",color:"black",borderRadius:20}}}>More{'>'}</Button>
