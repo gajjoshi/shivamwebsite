@@ -199,64 +199,7 @@ const AboutUs = () => {
         </Carousel>
         </Grid>
         </Grid>
-        {/* <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          className="chotu2"
-          aria-describedby="modal-modal-description"
-        >
-          <Box sx={style} className="chotu2">
-            {show ? <>
-              <Grid container >
-                <Grid item md={3} xs={12}>
-                  <Grid container>
-                    <Grid item md={12} xs={12}>
-                      <img src={show.image} style={{ width: 100, height: 100, borderRadius: 100 }}></img>
-                    </Grid>
-                    <Grid item md={12}>
-                      Social Media:
-                    </Grid>
-                    <Grid item md={6} xs={6}>
-                    <a href={show.imdb_id} target='_blank'>
-                      <img src={imdb1}  className='imdbsize' alt='imdb'/>
-                      </a>
-                    </Grid>
-                    <Grid item md={6} xs={6}>
-                    <a href={show.insta_id} target='_blank'>
-                      <InstagramIcon />
-                      </a>
-                    </Grid>
-                  </Grid>
-
-                </Grid>
-                <Grid item md={9} xs={12} sx={{paddingLeft:5}}>
-                  <Grid container rowSpacing={1}>
-                    <Grid item md={12}>
-                      <Typography variant="h7" >
-                        Name: {show.name}
-                      </Typography>
-                    </Grid>
-                    <Grid item md={12}>
-                      <Typography variant="h7" >
-                        Description:{show.bio}
-                      </Typography>
-                    </Grid>
-                    <Grid item md={12}>
-                      <Typography variant="h7" >
-                        Detail:{show.detail}
-                      </Typography>
-                    </Grid>
-                  </Grid>
-                </Grid>
-
-
-              </Grid>
-
-            </> : <></>}
-
-          </Box>
-        </Modal> */}
+   
         <Modal
         open={open}
         onClose={handleClose}
