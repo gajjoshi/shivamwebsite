@@ -10,9 +10,7 @@ import { useEffect } from 'react';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import logo from '../images/logo.png';
 import './Navbar.css';
-import Producerbio from './Producerbio';
 import pe from '../images/pe.png';
 export default function Navbar() {
   const handleScroll = () => {

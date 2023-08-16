@@ -7,12 +7,9 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import imdb from '../images/imdb.png';
 import './Contact.css'
 import imdb1 from '../images/imdb1.png';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const AboutUs = () => {
   // const style = {

@@ -1,6 +1,5 @@
 import React from 'react'
 import hanuman2 from '../images/jaihaunuman.png'
-// import hanuman2 from '../images/hanuman2.png'
 import { motion } from 'framer-motion'
 import './Navbar.css'
 import { useEffect } from "react";

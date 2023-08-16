@@ -1,13 +1,11 @@
 import React from 'react'
 import EmailIcon from '@mui/icons-material/Email';
-import CallIcon from '@mui/icons-material/Call';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Grid, IconButton, Typography, Button } from '@mui/material'
 import TextField from '@mui/material/TextField';
 import axios from 'axios';
 import { FormControl } from '@mui/base';
 import { useState } from 'react';
-import map from '../images/map.jpg' 
 import map2 from '../images/map2.png'
 import './Contact.css'
 import { ToastContainer, toast } from 'react-toastify';
