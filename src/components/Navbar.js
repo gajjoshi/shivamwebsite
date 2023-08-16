@@ -56,11 +56,11 @@ export default function Navbar() {
   const styles5 = select === 5 ? { backgroundColor: '#2b2c2c', color: 'white' } : {};
 
   // Styles for the active link content
-  const s1 = select === 1 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
-  const s2 = select === 2 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
-  const s3 = select === 3 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
-  const s4 = select === 4 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
-  const s5 = select === 5 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' } : {};
+  const s1 = select === 1 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' , fontWeight:'bold' , fontSize:'large'} : {fontWeight:'bold', fontSize:'large'};
+  const s2 = select === 2 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large'};
+  const s3 = select === 3 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large'};
+  const s4 = select === 4 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large'};
+  const s5 = select === 5 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large'};
 
   const st={paddingLeft:20,paddingRight:20}
   return (
