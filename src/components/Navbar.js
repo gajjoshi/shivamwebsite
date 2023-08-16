@@ -49,18 +49,18 @@ export default function Navbar() {
   const [select, setSelect] = useState(0);
 
   // Styles for the active links
-  const styles1 = select === 1 ? { backgroundColor: '#2b2c2c', color: 'white' } : {};
-  const styles2 = select === 2 ? { backgroundColor: '#2b2c2c', color: 'white' } : {};
-  const styles3 = select === 3 ? { backgroundColor: '#2b2c2c', color: 'white' } : {};
-  const styles4 = select === 4 ? { backgroundColor: '#2b2c2c', color: 'white' } : {};
-  const styles5 = select === 5 ? { backgroundColor: '#2b2c2c', color: 'white' } : {};
+  const styles1 = select === 1 ? {  color: 'white' } : {};
+  const styles2 = select === 2 ? { color: 'white' } : {};
+  const styles3 = select === 3 ? {  color: 'white' } : {};
+  const styles4 = select === 4 ? {  color: 'white' } : {};
+  const styles5 = select === 5 ? {  color: 'white' } : {};
 
   // Styles for the active link content
-  const s1 = select === 1 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' , fontWeight:'bold' , fontSize:'large'} : {fontWeight:'bold', fontSize:'large'};
-  const s2 = select === 2 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white' , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large'};
-  const s3 = select === 3 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large'};
-  const s4 = select === 4 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large'};
-  const s5 = select === 5 ? { border: 'solid 2px #9a9f75', padding: 2, borderRadius: 10, color: 'white'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large'};
+  const s1 = select === 1 ? {  color: 'red' , fontWeight:'bold' , fontSize:'large'} : {fontWeight:'bold', fontSize:'large',color: 'white'};
+  const s2 = select === 2 ? {  color: 'red' , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large',color: 'white'};
+  const s3 = select === 3 ? {  color: 'red'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large',color: 'white'};
+  const s4 = select === 4 ? {  color: 'red'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large',color: 'white'};
+  const s5 = select === 5 ? {  color: 'red'  , fontWeight:'bold', fontSize:'large' } : {fontWeight:'bold', fontSize:'large',color: 'white'};
 
   const st={paddingLeft:20,paddingRight:20}
   return (
@@ -70,8 +70,8 @@ export default function Navbar() {
           <img src={pe} style={{ width: '4%',padding:0 }} />
         </div> */}
         <div>
-          <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 justify-content-start" style={{ backgroundColor: '#b62e2f' }}>
-          <div className="container-fluid" style={{ backgroundColor: '#b62e2f' }}>
+          <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 justify-content-start" style={{ backgroundColor: '' }}>
+          <div className="container-fluid" style={{ backgroundColor: '#000' }}>
               {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button> */}
@@ -84,7 +84,7 @@ export default function Navbar() {
                   <div style={st}>
                   <div style={styles1} >
                     <a className="nav-link active" aria-current="page" href="#">
-                      <div style={s1}>Home</div>
+                      <div className='h' style={s1}>Home</div>
                     </a>
                   </div>
                   </div>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <div style={st}>
                   <div style={styles5} >
                     <a className="nav-link active" aria-current="page" href="#">
-                      <div style={s5}>Our Story</div>
+                      <div className='h' style={s5}>Our Story</div>
                     </a>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function Navbar() {
                   <div style={st}>
                   <div style={styles3} >
                     <a className="nav-link active" href="#">
-                      <div style={s3}>Projects</div>
+                      <div  className='h' style={s3}>Projects</div>
                     </a>
                   </div>
                   </div>
@@ -111,7 +111,7 @@ export default function Navbar() {
                   <div style={st}>
                   <div style={styles2} >
                     <a className="nav-link active" href="#">
-                      <div style={s2}>About us</div>
+                      <div className='h' style={s2}>About us</div>
                     </a>
                   </div>
                   </div>
@@ -120,7 +120,7 @@ export default function Navbar() {
                   <div style={st}>
                   <div style={styles4} >
                     <a className="nav-link active" href="#">
-                      <div style={s4}>Contact us</div>
+                      <div className='h' style={s4}>Contact us</div>
                     </a>
                   </div>
                   </div>
