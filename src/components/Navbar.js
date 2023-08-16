@@ -77,7 +77,7 @@ export default function Navbar() {
               {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button> */}
-            <img src={pe} style={{ width: '2%',padding:0 }} />
+            <img src={pe} style={{  }} className='logopic' />
             <div style={{paddingLeft:"15%"}}>
             
               <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">

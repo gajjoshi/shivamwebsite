@@ -20,7 +20,7 @@ const ExpandMore = styled((props) => {
 
 
 const Mov = ({ value }) => {
-    console.log(typeof(value));
+    //console.log(typeof(value));
     const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -49,11 +49,11 @@ const [data, setData] = React.useState([]);
       async function makeRequest() {
         try {
           const response = await axios.request(config);
-          console.log((response.data));
+          //console.log((response.data));
           setData(response.data);
         }
         catch (error) {
-          console.log(error);
+          //console.log(error);
         }
       }
       

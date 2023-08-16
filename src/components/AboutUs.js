@@ -278,12 +278,12 @@ const AboutUs = () => {
                   <Grid item md={12} xs={4} >
                       Social Media:
                     </Grid>
-                  <Grid item xs={2}>
+                  <Grid item md={6} xs={2}>
                     <a href={show.imdb_id} target="_blank">
                       <img src={imdb1} className="imdbsize" alt="imdb" />
                     </a>
                   </Grid>
-                  <Grid item xs={2}>
+                  <Grid item md={6} xs={2}>
                     <a href={show.insta_id} target="_blank">
                       <InstagramIcon />
                     </a>
@@ -294,17 +294,17 @@ const AboutUs = () => {
                 <Grid container rowSpacing={1}>
                   <Grid item xs={12}>
                     <Typography variant="h7" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
-                      Name: {show.name}
+                      <span style={{fontWeight:"bold"}}>Name:</span> {show.name}
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography variant="h7" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
-                      Description: {show.bio}
+                    <span style={{fontWeight:"bold"}}>Description:</span> {show.bio}
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography variant="h7" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
-                      Detail: {show.detail}
+                    <span style={{fontWeight:"bold"}}>Detail:</span> {show.detail}
                     </Typography>
                   </Grid>
                 </Grid>
