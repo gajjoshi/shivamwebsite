@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 import React from 'react'
 import './Contact.css'
-import current from '../images/7string.png'
+import current from '../images/7str.jpg'
 import future from '../images/future.jpg'
 export default function Project() {
     const prev=()=>{
