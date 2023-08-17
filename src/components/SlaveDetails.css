@@ -25,3 +25,41 @@ backdrop-filter: blur( 4px );
 /* border-radius: 10px; */
 color: rgb(194, 190, 196);
 }
+/* dhruvin added */
+.basbas2{
+    background: #5a2626;
+backdrop-filter: blur( 4px );
+/* -webkit-backdrop-filter: blur( 4px ); */
+/* border-radius: 10px; */
+color: rgb(194, 190, 196);
+}
+
+.center {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 70px 0;
+    margin-top: 20rem;
+    /* border: 3px solid green; */
+    color: rgb(194, 190, 196);
+    /* text-align: center; */
+  }
+  .center:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
