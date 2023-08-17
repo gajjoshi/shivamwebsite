@@ -30,7 +30,7 @@ const Home = () => {
             <div
               style={{
                 //backgroundImage:`url(${item.img})`,
-                height: "500px",
+                height: "600px",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
