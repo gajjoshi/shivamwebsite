@@ -143,11 +143,21 @@ const AboutUs = () => {
                       <Grid container>
                         <Grid item md={12} xs={12} sm={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                           <Button onClick={() => handleOpen(item)}>
-                            <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px'}}></img>
+                          <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px' ,transition: 'transform 0.5s ease'}}
+                             onMouseOver={(e)=>{
+                              e.currentTarget.style.transform='scale(1.1)';
+                              //e.currentTarget.style.filter = 'blur(5px)'; // Adding a blur effect on hover
+                              e.currentTarget.style.boxShadow =  '0px 0px 15px rgba(255, 255, 255, 0.5)'; // Adding a shadow effect on hover  
+                            }}
+                             onMouseOut={(e)=>{e.currentTarget.style.transform='scale(1)';
+                             e.currentTarget.style.filter = 'none'; // Resetting the blur effect
+                             e.currentTarget.style.boxShadow = 'none'; // Resetting the shadow effect
+                            }}
+                             ></img>
                           </Button>
                         </Grid>
                         <Grid item md={12} sm={12} xs={12} sx={{ justifyContent: "center", display: "block", textAlign: "center" }}>
-                          <Typography variant="h6" sx={{ color: "white" , font:'bold'}}>
+                          <Typography variant="h6" sx={{ color: "white" , font:'bold',fontFamily:"Rosarivo"}}>
                             {item.name}
                           </Typography>
                           <Typography variant="h6" sx={{ color: "white"}}>
@@ -176,11 +186,21 @@ const AboutUs = () => {
                       <Grid container>
                         <Grid item md={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                         <Button onClick={() => handleOpen(item)}>
-                            <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px' }}></img>
+                            <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px' ,transition: 'transform 0.5s ease'}}
+                             onMouseOver={(e)=>{
+                              e.currentTarget.style.transform='scale(1.1)';
+                              //e.currentTarget.style.filter = 'blur(5px)'; // Adding a blur effect on hover
+                              e.currentTarget.style.boxShadow =  '0px 0px 15px rgba(255, 255, 255, 0.5)'; // Adding a shadow effect on hover  
+                            }}
+                             onMouseOut={(e)=>{e.currentTarget.style.transform='scale(1)';
+                             e.currentTarget.style.filter = 'none'; // Resetting the blur effect
+                             e.currentTarget.style.boxShadow = 'none'; // Resetting the shadow effect
+                            }}
+                             ></img>
                           </Button>
                         </Grid>
                         <Grid item md={12} sx={{ justifyContent: "center", display: "block", textAlign: "center"}}>
-                          <Typography variant="h6" sx={{ color: "white", paddingLeft: 0 }}>
+                          <Typography variant="h6" sx={{ color: "white", paddingLeft: 0,fontFamily:"Rosarivo" }}>
                             {item.name}
                           </Typography>
                           <Typography variant="h6" sx={{ color: "white", paddingLeft: 0 }}>

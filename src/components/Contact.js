@@ -101,9 +101,9 @@ export default function Contact() {
             </Grid>
             <Grid item md={1} sm={1} xs={1}></Grid>
             <Grid item md={3} sm={1} xs={1}></Grid>
-            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px" }}>
+            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px",paddingRight:"0px" }}>
               <IconButton>
-                <EmailIcon sx={{ color: "red" }}></EmailIcon>
+                <EmailIcon sx={{ color: "red" ,paddingRight:"0px"}}></EmailIcon>
               </IconButton>
               <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75" }}>
                 info@pinngkash.com
@@ -137,7 +137,7 @@ export default function Contact() {
             <Grid item md={8} className='contactus' >
               <Grid container>
                 <Grid item md={12} sm={12} xs={12} sx={{color:"#9a9f75",fontSize:"40px", fontStyle :"bold", fontWeight :"bold", paddingTop: "20px" }}>
-                  I'm interested...
+                  Contact Us
                 </Grid>
                 <Grid item md={12} sm={12} xs={12} sx={{ paddingTop: "40px" }}>
                   <TextField error value={name} onChange={(e)=>{setName(e.target.value)}} required id="standard-basic" variant="standard" placeholder="Your name" sx={{ width: "100%", input: { color: 'white' } }} />
