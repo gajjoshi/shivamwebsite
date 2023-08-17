@@ -26,7 +26,7 @@ export default function Landing() {
         <img src={hanuman2} alt="Hanuman" className='hanuman' />
           </div> 
           <div>
-          <div style={{color:'#9a9f75',justifyContent:"center",textAlign:"center",fontWeight:"bold",fontFamily:"Ros"}} className='entry' >WELCOME TO PINNGAKSH ENTERCONN</div>
+          <div style={{color:'#9a9f75',justifyContent:"center",textAlign:"center",fontWeight:"bold",fontFamily:"Ros"}} className='entry' ><span style={{fontSize:"20px"}}>WELCOME TO</span> PINNGAKSH ENTERCONN</div>
           </div> 
         </motion.div>
         
