@@ -20,10 +20,20 @@ export default function Landing() {
   return (
     <>
         <div className='fullbackground1' style={{position: "fixed",top: 0,left: 0,width: "100%",height: "100%",display:"flex",justifyContent:"center",alignItems:"center"}}>
-        <motion.div style={{ width: "45%", margin: "auto",marginBottom:"100px" }} initial={{opacity:0}} animate={{opacity:1.5}} transition={{duration:5,delay:1}}>
+          
+        <motion.div style={{ width: "45%", margin: "auto",marginBottom:"100px",display:"flex",flexDirection:"column" }} initial={{opacity:0}} animate={{opacity:1.5}} transition={{duration:5,delay:1}}>
+        <div>
         <img src={hanuman2} alt="Hanuman" className='hanuman' />
+          </div> 
+          <div>
+          <div style={{color:'#9a9f75',justifyContent:"center",textAlign:"center",fontWeight:"bold",fontFamily:"Ros"}} className='entry' >WELCOME TO PINNGAKSH ENTERCONN</div>
+          </div> 
         </motion.div>
+        
         </div>
+        <br/>
+       
+        
     
     </>
   )
