@@ -30,5 +30,15 @@
 }
 
 .h:hover {
-  color: red;
+  color: red !important;
+}
+.container-fluid{
+  background-image: url("../images/texture_.jpg");
+  /* background: rgba(56, 2, 2, 0.6); */
+box-shadow: -7px 4px 20px 13px rgb(254 0 60 / 37%);
+backdrop-filter: blur( 10px );
+/* -webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+height: 60px;
 }

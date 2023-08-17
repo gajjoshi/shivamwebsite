@@ -70,12 +70,12 @@ export default function Navbar() {
           <img src={pe} style={{ width: '4%',padding:0 }} />
         </div> */}
         <div>
-          <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 justify-content-start" style={{ backgroundColor: '' }}>
-          <div className="container-fluid" style={{ backgroundColor: '#000' }}>
+          <nav className="navbar navbar-expand-lg bg-body-tertiary p-0 justify-content-start" style={{  }}>
+          <div className="container-fluid" style={{ }}>
               {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button> */}
-            <img src={pe} style={{  }} className='logopic' />
+            <img src={pe} style={{ width:"4%" }} className='logopic' />
             <div style={{paddingLeft:"15%"}}>
             
               <div className="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">

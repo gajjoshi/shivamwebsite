@@ -101,7 +101,7 @@ export default function Contact() {
             </Grid>
             <Grid item md={1} sm={1} xs={1}></Grid>
             <Grid item md={3} sm={1} xs={1}></Grid>
-            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px",paddingRight:"0px" }}>
+            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px",paddingRight:"  0px" }}>
               <IconButton>
                 <EmailIcon sx={{ color: "red" ,paddingRight:"0px"}}></EmailIcon>
               </IconButton>
