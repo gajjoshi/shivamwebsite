@@ -77,6 +77,18 @@ const Mov = ({ value }) => {
           {data.map((item, i) => {
             return (
               <>
+              {i === 0 && (
+                        <><Grid item md={12} sm={12} xs={12} sx={{textAlign:"center" ,color:"white"}}>Done by Mr Suraj Nishadraj in Association with ZEE5 Bangla</Grid><br></br></>
+                          )}
+                          {i === 5 && (
+                        <><Grid item md={12} sm={12} xs={12} sx={{textAlign:"center" ,color:"white"}}>Done by Mr Suraj Nishadraj in Association with Trigger Happy Entertainmrmt</Grid><br></br></>
+                          )}
+                          {i === 15 && (
+                        <><Grid item md={12} sm={12} xs={12} sx={{textAlign:"center" ,color:"white"}}>Done by Mr Suraj Nishadraj in Association with Jayesh Shikharkhane and Team</Grid><br></br></>
+                          )}
+                          {i === 17 && (
+                        <><Grid item md={12} sm={12} xs={12} sx={{textAlign:"center" ,color:"white"}}>Done by Mr Suraj Nishadraj in Association with Just Right Studios</Grid><br></br></>
+                          )}
                 <Grid item md={3} sm={12} xs={12}>
                   <Card
                     sx={{ maxWidth: 300, maxHeight: 1000, textAlign: "center" }}
@@ -93,10 +105,6 @@ const Mov = ({ value }) => {
                       image={item.image}
                       alt=""
                     />
-                    <CardHeader
-                      className="basbas2"
-                      title={item.desc}
-                    ></CardHeader>
                   </Card>
                 </Grid>
               </>
@@ -105,9 +113,6 @@ const Mov = ({ value }) => {
         </>
       ) : (
         <>
-          {/* dhruvin added */}
-          <div className="center">
-          </div>
         </>
       )}
     </Grid>

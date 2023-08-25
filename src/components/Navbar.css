@@ -22,6 +22,9 @@
   .entry{
     font-size: 50px;
   }
+  .welcome{
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   .hanuman {
@@ -34,6 +37,9 @@
   .entry{
     font-size: 20px;
     padding-bottom: 150px;
+  }
+  .welcome{
+    font-size: 10px;
   }
 }
 
