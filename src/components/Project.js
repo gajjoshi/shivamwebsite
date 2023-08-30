@@ -24,7 +24,7 @@ export default function Project() {
             WORK
           </div>
         </Grid>
-        <Grid item md={8} xs={12} sm={12} sx={{height:{md:700,lg:700,sm:1380,xs:1380}}}>
+        <Grid item md={8} xs={12} sm={12} sx={{height:{md:700,lg:700,sm:500,xs:1380}}}>
             <Grid container columnSpacing={0} rowSpacing={0} sx={{justifyContent:{sm:"center",xs:"center"}}}>
             <Grid item md={12} sm={0} xs={0} sx={{ height:{md:100,xs:30,sm:30} }}></Grid>
             <motion.div whileHover={{ scale: 1.4 }} className='chotu' style={{ backgroundColor: "" }}>

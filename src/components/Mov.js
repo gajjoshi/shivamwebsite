@@ -89,7 +89,7 @@ const Mov = ({ value }) => {
                           {i === 17 && (
                         <><Grid item md={12} sm={12} xs={12} sx={{textAlign:"center" ,color:"white"}}>Done by Mr Suraj Nishadraj in Association with Just Right Studios</Grid><br></br></>
                           )}
-                <Grid item md={3} sm={12} xs={12}>
+                <Grid item md={3} sm={4} xs={12}>
                   <Card
                     sx={{ maxWidth: 300, maxHeight: 1000, textAlign: "center" }}
                     className="basbas"

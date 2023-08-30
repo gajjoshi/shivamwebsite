@@ -122,7 +122,7 @@ const AboutUs = () => {
   return (
     <>
         <Grid container sx={{backgroundColor:""}}>        
-        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'80px',md:"15%"},paddingTop: { xs: 5, md: '80px',lg:"80px" }}}>
+        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'80px',sm:"30%",md:"15%"},paddingTop: { xs: 5, md: '80px',lg:"80px" } }}>
         <div style={{ paddinTop: 0, fontSize: 60, paddingLeft: 30, color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
             OUR PEOPLE
           </div>
@@ -184,7 +184,7 @@ const AboutUs = () => {
                   <>
                     <Grid item md={3.5} sm={12} xs={12} >
                       <Grid container>
-                        <Grid item md={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
+                        <Grid item md={12} sm={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                         <Button onClick={() => handleOpen(item)}>
                             <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px' ,transition: 'transform 0.5s ease'}}
                              onMouseOver={(e)=>{
@@ -199,7 +199,7 @@ const AboutUs = () => {
                              ></img>
                           </Button>
                         </Grid>
-                        <Grid item md={12} sx={{ justifyContent: "center", display: "block", textAlign: "center"}}>
+                        <Grid item md={12} sm={12} sx={{ justifyContent: "center", display: "block", textAlign: "center"}}>
                           <Typography variant="h6" sx={{ color: "white", paddingLeft: 0,fontFamily:"Rosarivo" }}>
                             {item.name}
                           </Typography>

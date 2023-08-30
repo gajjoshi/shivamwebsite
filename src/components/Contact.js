@@ -88,7 +88,7 @@ export default function Contact() {
         <Grid item md={6} sm={12} xs={12} sx={{ paddingTop: "20px",backgroundColor:"2b2c2c" }}>
           <Grid container>
             <Grid item md={3} sm={1} xs={1}></Grid>
-            <Grid item md={8} sm={10} xs={10} >
+            <Grid item md={8} sm={10} xs={10} sx={{textAlign:{sm:"center"}}} >
               <Typography variant='h5' sx={{ fontStyle: "bold", fontSize: "40px", fontWeight: "1000",color:"#9a9f75", fontWeight :"bold"}}>
                 Let’s discuss
               </Typography>
@@ -101,7 +101,7 @@ export default function Contact() {
             </Grid>
             <Grid item md={1} sm={1} xs={1}></Grid>
             <Grid item md={3} sm={1} xs={1}></Grid>
-            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px",paddingRight:"  0px" }}>
+            <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px",paddingRight:"  0px",textAlign:{sm:"center"} }}>
               <IconButton>
                 <EmailIcon sx={{ color: "red" ,paddingRight:"0px"}}></EmailIcon>
               </IconButton>
@@ -132,7 +132,7 @@ export default function Contact() {
             <Grid item md={1} sm={1} xs={1}></Grid>
           </Grid>
         </Grid>
-        <Grid className='hihello' item md={6} sx={{ paddingTop: "20px" ,padding:3}}>
+        <Grid className='hihello' item md={6} sx={{ paddingTop: "20px" ,padding:{md:3,sm:20}}}>
           <Grid container>
             <Grid item md={8} className='contactus' >
               <Grid container>
