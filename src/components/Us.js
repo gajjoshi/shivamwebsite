@@ -30,7 +30,7 @@ export default function Us() {
             WHO ARE WE
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={12} md={7} sx={{ height: { xs: 200, sm: 300 }, color: 'white', paddingTop: { xs: '20px', sm: '20px' },padding:{xs:'10px'}, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75',fontSize:{xs:"15px",md:"25px"},textAlign: { xs: 'center', sm: 'center',md:'center' } }}>
+        <Grid item xs={12} sm={12} md={7} sx={{ height: { xs: 200, sm: 300,s:50 }, color: 'white', paddingTop: { xs: '20px', sm: '20px' },padding:{xs:'10px'}, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75',fontSize:{xs:"15px",md:"25px"},textAlign: { xs: 'center', sm: 'center',md:'center' } }}>
             <span >Welcome to Pinngaksh Enterconn</span>
             <br/>
             The nexus of innovative storytelling. We specialize in curating gripping narratives that transcend conventions and kindle the flames of imagination.

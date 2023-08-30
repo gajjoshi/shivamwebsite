@@ -122,24 +122,21 @@ const AboutUs = () => {
   return (
     <>
         <Grid container sx={{backgroundColor:""}}>        
-        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'80px',sm:"30%",md:"15%"},paddingTop: { xs: 5, md: '80px',lg:"80px" } }}>
-        <div style={{ paddinTop: 0, fontSize: 60, paddingLeft: 30, color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
+        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'6%',sm:"33%",md:"15%",s:"32%"},paddingTop: { xs: 5, md: '80px',lg:"80px",s:0 }, fontSize: { xs: '40px', sm: '60px' } }}>
+        <div style={{color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
             OUR PEOPLE
-          </div>
-          <div style={{ paddinTop: 0, fontSize: 60, paddingLeft: {md:80,lg:80,sm:30,xs:30}, color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
-            
           </div>
         </Grid>
         <Grid item md={8} xs={12} sm={12} sx={{ paddingTop: 0 }}>
         <Carousel >
           <Carousel.Item interval={500000} style={{ padding: '60px' }}>
             <Grid container >
-            <Grid item md={0.75} xs={0.5} sm={0}></Grid>
+            <Grid item md={0.75} xs={0} sm={0.75}></Grid>
               {data1.length > 0 ? <>
                 {data1.map(item => (
 
                   <>
-                    <Grid item md={3.5} xs={12} sm={12}>
+                    <Grid item md={3.5} xs={12} sm={3.5}>
                       <Grid container>
                         <Grid item md={12} xs={12} sm={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                           <Button onClick={() => handleOpen(item)}>
@@ -171,20 +168,20 @@ const AboutUs = () => {
 
 
               </> : <></>}
-              <Grid item md={0.75} xs={0.5} sm={0}></Grid>
+              <Grid item md={0.75} xs={0} sm={0.75}></Grid>
             </Grid>
 
           </Carousel.Item>
          
           <Carousel.Item interval={2000} style={{ padding: '60px' }}>
             <Grid container>
-            <Grid item md={0.75} xs={0.5} sm={0}></Grid>
+            <Grid item md={2.5} xs={0} sm={2.5}></Grid>
               {data3.length > 0 ? <>
                 {data3.map(item => (
                   <>
-                    <Grid item md={3.5} sm={12} xs={12} >
+                    <Grid item md={3.5} sm={3.5} xs={12} >
                       <Grid container>
-                        <Grid item md={12} sm={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
+                        <Grid item md={12} sm={12} xs={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
                         <Button onClick={() => handleOpen(item)}>
                             <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px' ,transition: 'transform 0.5s ease'}}
                              onMouseOver={(e)=>{
@@ -199,7 +196,7 @@ const AboutUs = () => {
                              ></img>
                           </Button>
                         </Grid>
-                        <Grid item md={12} sm={12} sx={{ justifyContent: "center", display: "block", textAlign: "center"}}>
+                        <Grid item md={12} sm={12} xs={12} sx={{ justifyContent: "center", display: "block", textAlign: "center"}}>
                           <Typography variant="h6" sx={{ color: "white", paddingLeft: 0,fontFamily:"Rosarivo" }}>
                             {item.name}
                           </Typography>
@@ -213,7 +210,7 @@ const AboutUs = () => {
 
                 ))}
               </> : <></>}
-              <Grid item md={0.75} xs={0.5} sm={0}></Grid>
+              <Grid item md={2.5} xs={0} sm={2.5}></Grid>
             </Grid>
           </Carousel.Item>
         </Carousel>

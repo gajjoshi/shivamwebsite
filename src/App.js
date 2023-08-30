@@ -11,7 +11,8 @@ const App = () => {
     breakpoints: {
       values: {
         xs: 0,
-        sm: 600,
+        s: 600,
+        sm:800,
         md: 1030,  // Change this value to your desired breakpoint
         lg: 1280,
         xl: 1920,
