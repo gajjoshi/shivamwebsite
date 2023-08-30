@@ -73,10 +73,19 @@
       background-image: url('../images/7str.jpg');
     }
   }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px ) {
   .banner{
     background-image: url('../images/banner.jpg');
   }
 }
+@media screen and (min-width: 768px ) {
+  .banner{
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+  
+
   
   

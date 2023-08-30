@@ -1,18 +1,28 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
-import Contact from "./components/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutUs from "./components/AboutUs";
-import Home from "./components/Home";
-import Project from "./components/Project";
-import SlaveDetails from "./components/SlaveDetails";
 import Movies from "./components/Movies";
-import Land from "./components/Land";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const App = () => {
+
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 600,
+        md: 1030,  // Change this value to your desired breakpoint
+        lg: 1280,
+        xl: 1920,
+      },
+    },
+  });
+  
+
   return (
     <>
+      <ThemeProvider theme={theme}>
       <Routes>
         <Route path="/home" element={<Navbar/>}></Route>
 
@@ -27,6 +37,7 @@ const App = () => {
           }
         ></Route>
       </Routes>
+      </ThemeProvider>
     </>
   );
 };
