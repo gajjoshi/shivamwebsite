@@ -122,7 +122,7 @@ const AboutUs = () => {
   return (
     <>
         <Grid container sx={{backgroundColor:""}}>        
-        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center", paddingLeft:{xs:'6%',sm:"33%",md:"15%",s:"32%"},paddingTop: { xs: 5, md: '80px',lg:"80px",s:0 }, fontSize: { xs: '40px', sm: '60px' } }}>
+        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center",textAlign:{xs:'center',sm:'center',s:"center"}, paddingLeft:{md:"15%"},paddingTop: { xs: 5, md: '80px',lg:"80px",s:0 }, fontSize: { xs: '40px', sm: '60px' } }}>
         <div style={{color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
             OUR PEOPLE
           </div>

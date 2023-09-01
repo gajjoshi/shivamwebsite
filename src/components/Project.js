@@ -18,7 +18,7 @@ export default function Project() {
   return (
     <>
     <Grid container sx={{backgroundColor:""}}>
-        <Grid item md={4} xs={12} sm={12} s={12}  sx={{backgroundColor:"",display:"flex-column",placeItems:"center",textAlign:{s:"center"} ,paddingLeft:{xs:'10%',sm:"30%",md:"15%"},paddingTop: { xs: 25,sm:"0%", md: '250px',lg:"250px" }, fontSize: { xs: '40px', sm: '60px' },}}>
+        <Grid item md={4} xs={12} sm={12} s={12}  sx={{backgroundColor:"",display:"flex-column",placeItems:"center",textAlign:{xs:'center',sm:'center',s:"center"} ,paddingLeft:{md:"15%"},paddingTop: { xs: 25,sm:"0%", md: '250px',lg:"250px" }, fontSize: { xs: '40px', sm: '60px' },}}>
         <div style={{  color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
             OUR WORK
           </div>
