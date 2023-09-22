@@ -20,12 +20,12 @@
         },
       },
     });
-    useEffect(() => {
-      // Check if the current path is "/home" and then redirect to "/"
-      if (window.location.pathname === "/home") {
-        window.location.pathname = "/";
-      }
-    }, []);
+    // useEffect(() => {
+    //   // Check if the current path is "/home" and then redirect to "/"
+    //   if (window.location.pathname === "/home") {
+    //     window.location.pathname = "/";
+    //   }
+    // }, []);
   
     
 
