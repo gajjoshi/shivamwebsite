@@ -2,8 +2,6 @@
   import Navbar from "./components/Navbar";
   import Landing from "./components/Landing";
   import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-  import Movies from "./components/Movies";
-  // import { Switch} from "react-router-dom";
   import { createTheme, ThemeProvider } from '@mui/material/styles';
 
   const App = () => {
@@ -38,14 +36,7 @@
           <Route path="/" element={<Landing />}></Route>
           
 
-          <Route
-            path="/movie"
-            element={
-              <>
-                <Movies></Movies>
-              </>
-            }
-          ></Route>
+
         </Routes>
         </ThemeProvider>
       </>

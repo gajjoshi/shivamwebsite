@@ -31,7 +31,7 @@ export default function Us() {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={7} sx={{ height: { xs: 200, sm: 300,s:50 }, color: 'white', paddingTop: { xs: '20px', sm: '20px' },padding:{xs:'10px'}, textAlign: { xs: 'center', sm: 'left' }, color: '#9a9f75',fontSize:{xs:"15px",md:"25px"},textAlign: { xs: 'center', sm: 'center',md:'center' } }}>
-            <span >Welcome to Pinngaksh Enterconn</span>
+            <span >Welcome to Filmy Sibling Pictures</span>
             <br/>
             The nexus of innovative storytelling. We specialize in curating gripping narratives that transcend conventions and kindle the flames of imagination.
 
@@ -39,7 +39,7 @@ export default function Us() {
 
             Join us in exploring new dimensions of entertainment, where each story is a journey and every frame is a brushstroke of brilliance.
             <br/>
-            <span > At Pinngaksh Enterconn, we don't just tell stories; we redefine them</span>
+            <span > At Filmy Sibling Pictures, we don't just tell stories; we redefine them</span>
            </Grid>
         <Grid item md={0} xs={12} sm={12} className='tp' />
       </Grid>

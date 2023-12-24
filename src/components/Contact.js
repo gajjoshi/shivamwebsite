@@ -103,7 +103,8 @@ export default function Contact() {
             <Grid item md={3} sm={1} xs={1}></Grid>
             <Grid item md={8} sm={10} xs={10} sx={{ padding: "40px", paddingLeft: "0px",paddingRight:"  0px",textAlign:{sm:"center",s:"center",md:"left"} }}>
               <IconButton>
-                <EmailIcon sx={{ color: "red" ,paddingRight:"0px"}}></EmailIcon>
+              <a href="mailto:info@pinngaksh.com">
+              <EmailIcon sx={{ color: "red" ,paddingRight:"0px"}}></EmailIcon></a>
               </IconButton>
               <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75" }}>
                 info@pinngkash.com

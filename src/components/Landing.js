@@ -1,5 +1,5 @@
 import React from 'react'
-import hanuman2 from '../images/jaihaunuman.png'
+import hanuman2 from '../images/logo.png'
 import { motion } from 'framer-motion'
 import './Navbar.css'
 import { useEffect } from "react";
@@ -26,7 +26,7 @@ export default function Landing() {
         <img src={hanuman2} alt="Hanuman" className='hanuman' />
           </div> 
           <div>
-          <div style={{color:'#9a9f75',justifyContent:"center",textAlign:"center",fontWeight:"bold",fontFamily:"Ros"}} className='entry' ><span className='welcome'>WELCOME TO</span> PINNGAKSH ENTERCONN</div>
+          <div style={{color:'#9a9f75',justifyContent:"center",textAlign:"center",fontWeight:"bold",fontFamily:"Ros"}} className='entry' ><span className='welcome'>WELCOME TO</span> FILMY SIBLINGS PICTURES</div>
           </div> 
         </motion.div>
         

@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import Home from './Home';
 import AboutUs from './AboutUs';
-import Project from './Project';
 import Contact from './Contact';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Us from './Us';
@@ -156,9 +155,7 @@ export default function Navbar() {
       <div id="us">
         <Us></Us>
       </div>
-      <div id="project">
-        <Project></Project>
-      </div>
+
       <div id="about">
         <AboutUs></AboutUs>
       </div>
