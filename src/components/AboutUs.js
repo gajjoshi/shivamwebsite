@@ -9,7 +9,55 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import './Contact.css'
 import imdb1 from '../images/imdb1.png';
+import s from '../images/s.jpg';
+import g from '../images/g.jpg';
+import d from '../images/d.jpg';
+import l from '../images/l.jpg';
+
+
+
 import InstagramIcon from '@mui/icons-material/Instagram';
+
+
+const data1 = [
+  {
+    image: g,
+    name: 'Gopal Tiwari',
+    slave_type: '',
+    bio:'dfgdfasfdsagsrehgrtsdhdtrhg',
+    detail:'sdfdsrgd',
+    imdb_id:'https://www.imdb.com/name/nm14314082/',
+    insta_id:'https://www.instagram.com/gopaltiwari_official?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=='
+  },
+
+  {
+    image: d,
+    name: 'Divya Singh',
+    slave_type: '',
+    insta_id:'https://www.instagram.com/idivya23?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==',
+    imdb_id:'https://www.imdb.com/name/nm6099148/'
+  },
+
+
+];
+const data3 = [
+  {
+    image: s,
+    name: 'Shivam Rajput',
+    slave_type: '',
+    imdb_id:'https://m.imdb.com/name/nm15335214/?language=hi-in',
+    insta_id:'https://www.instagram.com/sshiv17?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=='
+  },
+  {
+    image: l,
+    name: 'Lovely Rajput',
+    slave_type: '',
+    insta_id:'https://www.instagram.com/lovely.rajput23?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==',
+    imdb_id:''
+  }
+
+];
+
 
 const AboutUs = () => {
   // const style = {
@@ -48,9 +96,9 @@ const AboutUs = () => {
   }
   const handleClose = () => setOpen(false);
 
-  const [data1, setData1] = useState([]);
+  // const [data1, setData1] = useState([]);
   const [data2, setData2] = useState([]);
-  const [data3, setData3] = useState([]);
+  // const [data3, setData3] = useState([]);
 
   useEffect(() => {
 
@@ -61,18 +109,17 @@ const AboutUs = () => {
       headers: {}
     };
 
-    async function makeRequest1() {
-      try {
-        const response = await axios.request(config1);
-        //console.log(response.data);
-        setData1(response.data);
-      }
-      catch (error) {
-        console.log(error);
-      }
-    }
-
-    makeRequest1();
+    // async function makeRequest1() {
+    //   try {
+    //     const response = await axios.request(config1);
+    //     //console.log(response.data);
+    //     setData1(response.data);
+    //   }
+    //   catch (error) {
+    //     console.log(error);
+    //   }
+    // }
+    // makeRequest1();
 
     let config2 = {
       method: 'get',
@@ -102,18 +149,18 @@ const AboutUs = () => {
       headers: {}
     };
 
-    async function makeRequest3() {
-      try {
-        const response = await axios.request(config3);
-        //console.log(response.data)
-        setData3(response.data);
-      }
-      catch (error) {
-        console.log(error);
-      }
-    }
+    // async function makeRequest3() {
+    //   try {
+    //     const response = await axios.request(config3);
+    //     //console.log(response.data)
+    //     setData3(response.data);
+    //   }
+    //   catch (error) {
+    //     console.log(error);
+    //   }
+    // }
 
-    makeRequest3();
+    // makeRequest3();
 
 
 
@@ -122,14 +169,14 @@ const AboutUs = () => {
   return (
     <>
         <Grid container sx={{backgroundColor:""}}>        
-        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center",textAlign:{xs:'center',sm:'center',s:"center"}, paddingLeft:{md:"15%"},paddingTop: { xs: 5, md: '80px',lg:"80px",s:0 }, fontSize: { xs: '40px', sm: '60px' } }}>
+        <Grid item md={4} xs={12} sm={12} sx={{backgroundColor:"",display:"flex-column",placeItems:"center",textAlign:{xs:'center',sm:'center',s:"center"}, paddingLeft:{md:"15%"},paddingTop: { xs: 20, md: '80px',lg:"80px",s:0 }, fontSize: { xs: '40px', sm: '60px' } }}>
         <div style={{color: "#b62e2f" ,fontFamily:"Rosarivo"}}>
             OUR PEOPLE
           </div>
         </Grid>
         <Grid item md={8} xs={12} sm={12} sx={{ paddingTop: 0 }}>
         <Carousel >
-          <Carousel.Item interval={500000} style={{ padding: '60px' }}>
+          {/* <Carousel.Item interval={500000} style={{ padding: '60px' }}>
             <Grid container >
             <Grid item md={0.75} xs={0} sm={0.75}></Grid>
               {data1.length > 0 ? <>
@@ -171,7 +218,135 @@ const AboutUs = () => {
               <Grid item md={0.75} xs={0} sm={0.75}></Grid>
             </Grid>
 
+          </Carousel.Item> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Carousel.Item interval={2000} style={{ padding: '60px' }}>
+            <Grid container>
+            <Grid item md={2.5} xs={0} sm={2.5}></Grid>
+              {data1.length > 0 ? <>
+                {data1.map(item => (
+                  <>
+                    <Grid item md={3.5} sm={3.5} xs={12} >
+                      <Grid container>
+                        <Grid item md={12} sm={12} xs={12} sx={{ justifyContent: "center", display: "flex", alignItems: "center",alignContent:"center" }}>
+                        <Button onClick={() => handleOpen(item)}>
+                            <img src={item.image} style={{ width: 260, height: 290, borderRadius: 80 , marginBottom:'15px' ,transition: 'transform 0.5s ease'}}
+                             onMouseOver={(e)=>{
+                              e.currentTarget.style.transform='scale(1.1)';
+                              //e.currentTarget.style.filter = 'blur(5px)'; // Adding a blur effect on hover
+                              e.currentTarget.style.boxShadow =  '0px 0px 15px rgba(255, 255, 255, 0.5)'; // Adding a shadow effect on hover  
+                            }}
+                             onMouseOut={(e)=>{e.currentTarget.style.transform='scale(1)';
+                             e.currentTarget.style.filter = 'none'; // Resetting the blur effect
+                             e.currentTarget.style.boxShadow = 'none'; // Resetting the shadow effect
+                            }}
+                             ></img>
+                          </Button>
+                        </Grid>
+                        <Grid item md={12} sm={12} xs={12} sx={{ justifyContent: "center", display: "block", textAlign: "center"}}>
+                          <Typography variant="h6" sx={{ color: "white", paddingLeft: 0,fontFamily:"Rosarivo" }}>
+                            {item.name}
+                          </Typography>
+                          <Typography variant="h6" sx={{ color: "white", paddingLeft: 0 }}>
+                            {item.slave_type}
+                          </Typography>
+                        </Grid>
+                      </Grid>
+                    </Grid>
+                  </>
+
+                ))}
+              </> : <></>}
+              <Grid item md={2.5} xs={0} sm={2.5}></Grid>
+            </Grid>
           </Carousel.Item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          
           <Carousel.Item interval={2000} style={{ padding: '60px' }}>
             <Grid container>
@@ -254,16 +429,16 @@ const AboutUs = () => {
                       <span style={{fontWeight:"bold"}}>Name:</span> {show.name}
                     </Typography>
                   </Grid>
-                  <Grid item xs={12}>
+                  {/* <Grid item xs={12}>
                     <Typography variant="h7" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
                     <span style={{fontWeight:"bold"}}>Description:</span> {show.bio}
                     </Typography>
-                  </Grid>
-                  <Grid item xs={12}>
+                  </Grid> */}
+                  {/* <Grid item xs={12}>
                     <Typography variant="h7" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
                     <span style={{fontWeight:"bold"}}>Detail:</span> {show.detail}
                     </Typography>
-                  </Grid>
+                  </Grid> */}
                 </Grid>
               </Grid>
             </Grid>

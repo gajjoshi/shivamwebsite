@@ -97,15 +97,7 @@ export default function Navbar() {
                   </div>
                 </div>
                 </Link>
-                <Link to="project" smooth={true} duration={300} offset={-170}>
-                  <div style={st}>
-                  <div style={styles3} >
-                    <a className="nav-link active" href="#">
-                      <div  className='h' style={s3}>Projects</div>
-                    </a>
-                  </div>
-                  </div>
-                </Link>
+
                 <Link to="about" smooth={true} duration={300} offset={-370}>
                   <div style={st}>
                   <div style={styles2} >
@@ -130,7 +122,9 @@ export default function Navbar() {
             
             <div style={{display:'flex'}}>
               <div style={{ paddingLeft: 5 }}>
-              <InstagramIcon sx={{color:'white'}}/>
+                <a href="https://www.instagram.com/filmysiblingpictures/">
+                <InstagramIcon sx={{color:'white'}}/>
+                </a>
             </div>
             <div style={{ paddingLeft: 5 }}>
               <YouTubeIcon sx={{color:'white'}}/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import hanuman2 from '../images/logo.png'
+import hanuman2 from '../images/ig/logo.png'
 import { motion } from 'framer-motion'
 import './Navbar.css'
 import { useEffect } from "react";

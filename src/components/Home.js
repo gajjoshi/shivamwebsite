@@ -12,7 +12,7 @@ const Home = () => {
       <Carousel style={{ marginTop: "1px" }}>
         {images.map((item, index) => (
           <Carousel.Item key={index} interval={40000}>
-            <a href="https://drive.google.com/file/d/1iP5Nfv5pq10GiK_iPRAwD8Id8Pz8l9jd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/watch?v=VOaUw3CjOJI" target="_blank" rel="noopener noreferrer">
               <div
                 style={{
                   backgroundImage: `url(${item})`, // Use item directly

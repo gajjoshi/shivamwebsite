@@ -42,6 +42,7 @@ export default function Contact() {
       
       else
       {
+        toast.success("Message sent successfully");
         setError("");
         submit();
       }
@@ -55,29 +56,29 @@ export default function Contact() {
     data.append('phone', ph);
     data.append('message', message);
 
-    let config = {
-      method: 'post',
-      maxBodyLength: Infinity,
-      url: 'https://prodhouse.pythonanywhere.com/contactus/',
-      data: data
-    };
+    // let config = {
+    //   method: 'post',
+    //   maxBodyLength: Infinity,
+    //   url: 'https://prodhouse.pythonanywhere.com/contactus/',
+    //   data: data
+    // };
 
-    async function makeRequest() {
-      try {
-        const response = await axios.request(config);
-        console.log((response.data));
-        setEmail("");
-        setName("");
-        setPhone("");
-        setMessage("");
-        toast.success("Message sent successfully");
-      }
-      catch (error) {
-        console.log(error);
-      }
-    }
+    // async function makeRequest() {
+    //   try {
+    //     const response = await axios.request(config);
+    //     console.log((response.data));
+    //     setEmail("");
+    //     setName("");
+    //     setPhone("");
+    //     setMessage("");
+    //     toast.success("Message sent successfully");
+    //   }
+    //   catch (error) {
+    //     console.log(error);
+    //   }
+    // }
 
-    makeRequest();
+    // makeRequest();
 
   }
   return (
@@ -107,7 +108,7 @@ export default function Contact() {
               <EmailIcon sx={{ color: "red" ,paddingRight:"0px"}}></EmailIcon></a>
               </IconButton>
               <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75" }}>
-                info@pinngkash.com
+                filmysiblingpictures@gmail.com
               </div>
               <div style={{ padding: "20px", paddingLeft: "0px" }}>
                
@@ -118,14 +119,14 @@ export default function Contact() {
                   <LocationOnIcon sx={{ color: "red" }}></LocationOnIcon>
                 </IconButton>
                 <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75", paddingBottom : "50px" }}>
-                Goregaon  East
+                Malad West
                 </div>
               </div>
               <div>
                 <div style={{ display: "inline", fontStyle: "bold", fontSize: "19px", fontWeight: "800",color:"#9a9f75", paddingTop: "100px"}}>
-                  <a href="https://www.google.com/maps/search/02+sunlight+,+PJ+Nehru+road+,+goregaon+east+mumbai+400063+maps/@19.097338,72.847325,17z/data=!3m1!4b1?entry=ttu" target="_blank">
-                  <img src={map2} style={{width:"70%", paddingTop:"30px"}}/>
-                  </a>
+                <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.3376803856513!2d72.84197187498015!3d19.180447982045724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6fbef4d122f%3A0x49138f212a75812!2sSheetal%20Darshi!5e0!3m2!1sen!2sin!4v1703928146260!5m2!1sen!2sin" width="300"
+    height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
 
